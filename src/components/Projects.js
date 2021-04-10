@@ -14,7 +14,6 @@ const Projects = () => {
 				<motion.div
 					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
 					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
 				>
 					<h3 className="cardz-title">Url Shortener</h3>
 					<p className="cardz-text">
@@ -45,7 +44,6 @@ const Projects = () => {
 				<motion.div
 					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
 					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
 				>
 					<h3>Random Meal</h3>
 					<p className="cardz-text">
@@ -75,7 +73,6 @@ const Projects = () => {
 				<motion.div
 					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
 					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
 				>
 					<h3>Book Storage App</h3>
 					<p>
@@ -106,7 +103,6 @@ const Projects = () => {
 				<motion.div
 					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
 					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
 				>
 					<h3>Weather App</h3>
 					<p>

@@ -11,7 +11,7 @@ function NavBar() {
 			<nav className="navbar">
 				<div className="nav-container">
 					<Link exact to="/" className="nav-logo">
-						CodeBucks
+						Tonia
 						<i className="fas fa-code"></i>
 					</Link>
 
@@ -38,7 +38,7 @@ function NavBar() {
 								Projects
 							</Link>
 						</li>
-						<li className="nav-item">
+						{/* <li className="nav-item">
 							<Link
 								exact
 								to="/blog"
@@ -48,7 +48,7 @@ function NavBar() {
 							>
 								Blog
 							</Link>
-						</li>
+						</li> */}
 						<li className="nav-item">
 							<Link
 								exact
