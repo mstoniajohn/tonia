@@ -1,0 +1,137 @@
+:root {
+	/* gereante colors from colors.co */
+	--gray0: #f8f8f8;
+	--gray1: #dbe1e8;
+	--gray2: #b2becd;
+	--gray3: #6c7983;
+	--gray4: #454e56;
+	--gray5: #2a2e35;
+	--gray6: #12181b;
+	--blue: #0084a5;
+	--black: #212121;
+	--white: white;
+	--primary: #efb6b2;
+	--secondary: #4e4e4e;
+	--error: #ff4a4a;
+}
+.navbar {
+	background-color: transparent;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	position: sticky;
+	top: 0;
+	z-index: 20;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	max-width: 1500px;
+}
+
+.nav-logo {
+	color: var(--primary);
+	align-items: center;
+	margin-left: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 2rem;
+	flex-grow: 1;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	margin-right: 2rem;
+}
+
+.nav-links {
+	color: var(--primary);
+
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	height: 100%;
+	border-bottom: 3px solid transparent;
+}
+.fa-code {
+	margin-left: 1rem;
+}
+
+.nav-item {
+	line-height: 40px;
+	margin-right: 1rem;
+}
+
+.nav-item:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width 0.7s ease, background-color 0.5s ease;
+	border-bottom: 3px solid var(--primary);
+}
+
+.nav-item:hover:after {
+	width: 100%;
+	background: rgb(49, 48, 48);
+	border-bottom: 3px solid var(--primary);
+}
+
+.nav-item .active {
+	color: rgb(34, 32, 32);
+	border-bottom: 3px solid var(--primary);
+}
+
+.nav-icon {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	.nav-menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		border-top: 1px solid var(--primary);
+		position: absolute;
+		top: 80px;
+		left: -110%;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+
+	.nav-menu.active {
+		background: #fbfdfd;
+		left: 0px;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 1;
+	}
+	.nav-item .active {
+		color: var(--primary);
+		border: none;
+	}
+	.nav-links {
+		padding: 1.5rem;
+		width: 100%;
+		display: table;
+	}
+
+	.nav-icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 60%);
+		font-size: 1.8rem;
+		cursor: pointer;
+		color: var(--primary);
+	}
+}
