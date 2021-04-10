@@ -1,14 +1,25 @@
+import { set } from 'mongoose';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function NavBar() {
 	const [click, setClick] = useState(false);
+	const [navbar, setNavbar] = useState(false);
 
 	const handleClick = () => setClick(!click);
+
+	const changeBackground = () => {
+		// window.scrollY
+		if (window.scrollY >= 80) setNavbar(true);
+		else {
+			setNavbar(false);
+		}
+	};
+	window.addEventListener('scroll', changeBackground);
 	return (
 		<>
-			<nav className="navbar">
+			<nav className={navbar ? 'navbar active' : 'navbar'}>
 				<div className="nav-container">
 					<Link exact to="/" className="nav-logo">
 						Tonia
