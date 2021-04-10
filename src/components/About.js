@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 
 export default function About() {
 	return (
-		<div className="container mt-5 flex flex-col justify-center items-center min-h-screen">
-			<h2 className="mb-4 text-center">About Me</h2>
+		<div className=" mt-5 flex flex-col justify-center items-center min-h-screen">
+			<h2 className="mb-4 text-center text-4xl">About Me</h2>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 				<motion.div
 					className="mb-2"
 					initial={{ x: '-100vw' }}
 					animate={{ x: '0' }}
 				>
-					<h3 className="mb-2">My Coding Journey</h3>
+					<h3 className="mb-2 text-2xl">My Coding Journey</h3>
 					<p>
 						A few years ago, while studying at Baruch College, I took a C++
 						coure to satistfy my Math elective requirements. This is where I
@@ -30,7 +30,7 @@ export default function About() {
 					initial={{ x: '100vw' }}
 					animate={{ x: '0' }}
 				>
-					<h3 className="mb-2">My Passions</h3>
+					<h3 className="mb-2 text-2xl">My Passions</h3>
 					<p>
 						Music is probably one of my biggest passion next to solving problems
 						or doing something cool with programming. I love to hike and do
@@ -40,8 +40,8 @@ export default function About() {
 					<br />
 					<br />
 				</motion.div>
-				<div className="mb-4">
-					<h3 className="mb-2">College</h3>
+				<div>
+					<h3 className="mb-2 text-2xl">College</h3>
 					<p>B.A. in Mathematics from Baruch College 2016</p>
 
 					<div className="">
@@ -51,8 +51,8 @@ export default function About() {
 						<br />
 					</div>
 				</div>
-				<div className="mb-4">
-					<h3 className="mb-2 text-left">Certificates</h3>
+				<div>
+					<h3 className="mb-2 text-2xl">Certificates</h3>
 					<div className="list-group">
 						<path className="list-item">Harvard CS50 2021</path>
 
@@ -61,14 +61,13 @@ export default function About() {
 				</div>
 
 				<motion.div
-					className="grid grid-cols-1 lg:grid-cols-2 gap-4"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 1 }}
 				>
 					<div className=" mb-4">
-						<h3 className="mb-3 text-left">Skills</h3>
-						<div className="mx-auto mb-4 flex flex-wrap">
+						<h3 className="mb-3 text-2xl">Skills</h3>
+						<div className="mx-auto mb-4 grid grid-cols-1 md:grid-cols-2 gap-2">
 							<div className="mr-4 mb-4">
 								<i
 									className="fas fa-database fa-3x align-middle"

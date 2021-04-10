@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
 	return (
 		<div className="hero flex justify-center items-center min-h-screen">
-			<div className="bg-white dark:bg-gray-800">
+			<div className="bg-white dark:bg-gray-800 mx-auto flex flex-col items-center">
 				<motion.h1
 					className="text-gray-900 dark:text-white text-4xl my-4"
 					initial={{ x: '-100vw' }}
@@ -15,11 +15,11 @@ const Home = () => {
 				>
 					Hello, I'm Tonia!
 				</motion.h1>
-				<p className="text-gray-600 dark:text-gray-300 text-xl">
+				<p className="text-gray-600 dark:text-gray-300 text-2xl">
 					Welcome to my website...
 				</p>
 
-				<ul className="grid grid-cols-3 gap-5 my-12">
+				<ul className="grid grid-cols-3 gap-8 my-6 mx-auto">
 					<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 						<a href="https://github.com/mstoniajohn">
 							{' '}

@@ -28,3 +28,8 @@ h3,
 h4 {
 	color: var(--primary) !important;
 }
+.fas::before,
+.fab::before {
+	color: var(--primary);
+	fill: var(--primary);
+}

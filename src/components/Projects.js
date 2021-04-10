@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
 	return (
-		<div className="container flex flex-col justify-center items-center min-h-screen">
+		<div className="flex flex-col justify-center items-center min-h-screen">
 			<h2 className="my-4 text-3xl">Projects</h2>
 			<motion.div
-				className="grid grid-cols-2 gap-4 mx-auto"
+				className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-4 mx-auto"
 				initial={{ x: '-100vw' }}
 				animate={{ x: '0' }}
 				transition={{ duration: 1 }}
 			>
 				<motion.div
-					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
+					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
 					whileHover={{ scale: 1.1 }}
 				>
 					<h3 className="cardz-title">Url Shortener</h3>
@@ -42,7 +42,7 @@ const Projects = () => {
 					</p>
 				</motion.div>
 				<motion.div
-					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
+					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
 					whileHover={{ scale: 1.1 }}
 				>
 					<h3>Random Meal</h3>
@@ -71,7 +71,7 @@ const Projects = () => {
 					</p>
 				</motion.div>
 				<motion.div
-					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
+					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
 					whileHover={{ scale: 1.1 }}
 				>
 					<h3>Book Storage App</h3>
@@ -101,7 +101,7 @@ const Projects = () => {
 					</p>
 				</motion.div>
 				<motion.div
-					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-screen-sm"
+					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
 					whileHover={{ scale: 1.1 }}
 				>
 					<h3>Weather App</h3>

@@ -10,7 +10,7 @@ function App() {
 			<Router>
 				<Navbar />
 
-				<div className="px-12 py-12 container box-content">
+				<div className="px-12 py-12 box-content">
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/projects" component={Projects} />
