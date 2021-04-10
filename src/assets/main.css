@@ -21,24 +21,9 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-
 :root {
   -moz-tab-size: 4;
   tab-size: 4;
-	/* gereante colors from colors.co */
-	--gray0: #f8f8f8;
-	--gray1: #dbe1e8;
-	--gray2: #b2becd;
-	--gray3: #6c7983;
-	--gray4: #454e56;
-	--gray5: #2a2e35;
-	--gray6: #12181b;
-	--blue: #0084a5;
-	--black: #212121;
-	--white: white;
-	--primary: #efb6b2;
-	--secondary: #4e4e4e;
-	--error: #ff4a4a;
 }
 
 /**
@@ -485,9 +470,8 @@ h6 {
  */
 
 a {
-  color: var(--primary);
+  color: inherit;
   text-decoration: inherit;
-
 }
 
 /**
@@ -540,7 +524,6 @@ embed,
 object {
   display: block;
   vertical-align: middle;
-  /* fill:var(--primary); */
 }
 
 /**
