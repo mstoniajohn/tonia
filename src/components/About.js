@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 
 export default function About() {
 	return (
-		<div className=" mt-5 flex flex-col justify-center items-center min-h-screen">
-			<h2 className="mb-4 text-center text-4xl">About Me</h2>
+		<section className="section">
+			<div className="title">
+				<h2>About Me</h2>
+				<div className="underline"></div>
+			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 				<motion.div
 					className="mb-2"
@@ -108,6 +111,6 @@ export default function About() {
 					</div>
 				</motion.div>
 			</div>
-		</div>
+		</section>
 	);
 }

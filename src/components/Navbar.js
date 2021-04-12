@@ -78,7 +78,7 @@ function NavBar() {
 								className="nav-links"
 								onClick={handleClick}
 							>
-								Info
+								About
 							</Link>
 						</li>
 					</ul>

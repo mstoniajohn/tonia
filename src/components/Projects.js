@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
 	return (
-		<div className="flex flex-col justify-center items-center min-h-screen">
-			<h2 className="my-4 text-3xl">Projects</h2>
-			<div className="underline"></div>
+		<section className="section">
+			<div className="title">
+				<h2>Projects</h2>
+				<div className="underline"></div>
+			</div>
 			<motion.div
 				className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-4 mx-auto"
 				initial={{ x: '-100vw' }}
@@ -131,7 +133,7 @@ const Projects = () => {
 					</p>
 				</motion.div>
 			</motion.div>
-		</div>
+		</section>
 	);
 };
 
