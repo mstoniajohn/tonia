@@ -40,6 +40,17 @@ function NavBar() {
 						<li className="nav-item">
 							<Link
 								exact
+								to="/experience"
+								activeClassName="active"
+								className="nav-links"
+								onClick={handleClick}
+							>
+								Experience
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link
+								exact
 								to="/projects"
 								activeClassName="active"
 								className="nav-links"
