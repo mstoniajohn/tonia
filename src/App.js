@@ -7,11 +7,11 @@ import Experience from './components/Experience';
 
 function App() {
 	return (
-		<div className="box-border">
+		<div>
 			<Router>
 				<Navbar />
 
-				<div className="px-12 py-12 box-content">
+				<div>
 					<Switch>
 						<Route path="/projects" component={Projects} />
 						<Route path="/about" component={About} />

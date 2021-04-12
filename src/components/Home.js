@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Experience from './Experience';
+import Projects from './Projects';
+
 
 const Home = () => {
 	return (
@@ -83,7 +85,10 @@ const Home = () => {
 					</p>
 				</div>
 			</div>
+			
 			<Experience />
+			<Projects />
+		
 		</>
 	);
 };
