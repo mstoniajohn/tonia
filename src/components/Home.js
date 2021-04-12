@@ -17,6 +17,7 @@ const Home = () => {
 					>
 						Hello, I'm Tonia!
 					</motion.h1>
+					<div className="underline"></div>
 					<p className="text-gray-600 dark:text-gray-300 text-2xl">
 						Welcome to my website...
 					</p>

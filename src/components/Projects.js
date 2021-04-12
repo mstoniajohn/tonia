@@ -5,6 +5,7 @@ const Projects = () => {
 	return (
 		<div className="flex flex-col justify-center items-center min-h-screen">
 			<h2 className="my-4 text-3xl">Projects</h2>
+			<div className="underline"></div>
 			<motion.div
 				className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-4 mx-auto"
 				initial={{ x: '-100vw' }}

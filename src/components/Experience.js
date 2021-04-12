@@ -4,10 +4,10 @@ import { FaAngleDoubleRight } from 'react-icons/fa';
 import data from './data';
 
 const Experience = () => {
-	const [jobs, setJobs] = useState(data);
+	// const [jobs, setJobs] = useState(data);
 	const [value, setValue] = useState(0);
 
-	const { company, dates, duties, title } = jobs[value];
+	const { company, dates, duties, title } = data[value];
 	return (
 		<section className="section">
 			<div className="title">
@@ -17,7 +17,7 @@ const Experience = () => {
 			<div className="jobs-center">
 				{/* btn container */}
 				<div className="btn-container">
-					{jobs.map((job, index) => (
+					{data.map((job, index) => (
 						<button
 							key={job.id}
 							onClick={() => setValue(index)}
