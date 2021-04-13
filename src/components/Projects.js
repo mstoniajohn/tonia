@@ -51,8 +51,8 @@ const Projects = () => {
 				>
 					<h3 className="cardz-title">Color Generator</h3>
 					<p className="cardz-text">
-						Generate 10 hexidecimal colors from 1 hex value. This project was
-						build using React and value.js to generate colors.
+						Generate 10 hexidecimal colors from 1 hexidecimal value. This
+						project was built using React and value.js to generate colors.
 					</p>
 					<p className="link mr-2 font-bold">
 						<Link to="/colors">View Project</Link>

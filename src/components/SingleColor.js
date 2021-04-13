@@ -35,9 +35,12 @@ const SingleColor = () => {
 	};
 
 	return (
-		<div className="">
+		<div className="section">
+			<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
+				Color Generator
+			</h2>
+			<div className="underline"></div>
 			<section className="container" style={{ margin: '0 auto' }}>
-				<h2 style={{ marginRight: '10px' }}>Color Generator</h2>
 				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
