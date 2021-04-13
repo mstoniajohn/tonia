@@ -35,18 +35,20 @@ const SingleColor = () => {
 	};
 
 	return (
-		<div className="section">
-			<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
-				Color Generator
-			</h2>
-			<div className="underline"></div>
+		<>
+			<section className="section">
+				<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
+					Color Generator
+				</h2>
+				<div className="underline"></div>
+			</section>
 			<section className="container" style={{ margin: '0 auto' }}>
 				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
 						value={color}
 						onChange={(e) => setColor(e.target.value)}
-						placeholder="#f15025"
+						placeholder="#efb6b2"
 						className={`${error ? 'error' : null}`}
 					/>
 
@@ -117,7 +119,7 @@ const SingleColor = () => {
 					);
 				})}
 			</section> */}
-		</div>
+		</>
 	);
 };
 
