@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import SingleColor from './components/SingleColor';
 
 function App() {
 	return (
@@ -20,6 +21,9 @@ function App() {
 						</Route>
 						<Route exact path="/">
 							<Home />
+						</Route>
+						<Route exact path="/colors">
+							<SingleColor />
 						</Route>
 					</Switch>
 				</div>

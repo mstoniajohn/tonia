@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
 	return (
@@ -42,6 +43,19 @@ const Projects = () => {
 						>
 							Code
 						</a>
+					</p>
+				</motion.div>
+				<motion.div
+					className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
+					whileHover={{ scale: 1.1 }}
+				>
+					<h3 className="cardz-title">Color Generator</h3>
+					<p className="cardz-text">
+						Generate 10 hexidecimal colors from 1 hex value. This project was
+						build using React and value.js to generate colors.
+					</p>
+					<p className="link mr-2 font-bold">
+						<Link to="/colors">View Project</Link>
 					</p>
 				</motion.div>
 				<motion.div
