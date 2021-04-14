@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Experience from './Experience';
 import Projects from './Projects';
 
-
 const Home = () => {
 	return (
 		<>
@@ -26,7 +25,7 @@ const Home = () => {
 
 					<ul className="grid grid-cols-3 gap-8 my-6 mx-auto">
 						<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
-							<a href="https://github.com/mstoniajohn">
+							<a href="https://github.com/mstoniajohn?tab=repositories">
 								{' '}
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -85,10 +84,9 @@ const Home = () => {
 					</p>
 				</div>
 			</div>
-			
+
 			<Experience />
 			<Projects />
-		
 		</>
 	);
 };

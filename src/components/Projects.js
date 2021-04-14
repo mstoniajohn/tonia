@@ -38,7 +38,7 @@ const Projects = () => {
 
 							<a
 								className="link font-bold"
-								href="/"
+								href="https://github.com/mstoniajohn/url-shortener"
 								target="_blank"
 								rel="noreferrer"
 							>
