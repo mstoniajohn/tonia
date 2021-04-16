@@ -50,6 +50,37 @@ const Projects = () => {
 						className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
 						whileHover={{ scale: 1.1 }}
 					>
+						<h3 className="cardz-title">Real-time Chat</h3>
+						<p className="cardz-text">
+							This real-time chat app was created with React and Firebase
+							Firestore. The app currently allows users to sign in and send
+							messages to anyone that is currently logged in.
+						</p>
+						<p>
+							<a
+								className="link mr-2 font-bold"
+								href="https://spacechatroom.com/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live Demo
+							</a>
+
+							<a
+								className="link font-bold"
+								href="https://github.com/mstoniajohn/firechat"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Code
+							</a>
+						</p>
+					</motion.div>
+
+					<motion.div
+						className="rounded-lg p-4 shadow-xl flex flex-col justify-between max-w-xs"
+						whileHover={{ scale: 1.1 }}
+					>
 						<h3 className="cardz-title">Color Generator</h3>
 						<p className="cardz-text">
 							Generate 10 hexidecimal colors from 1 hexidecimal value. This
