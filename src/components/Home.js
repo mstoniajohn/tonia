@@ -39,7 +39,7 @@ const Home = () => {
 								</svg>
 							</a>
 						</li>
-						<li>
+						<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 							<a href="https://www.linkedin.com/in/tonia-roganti/">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Home = () => {
 								</svg>
 							</a>
 						</li>
-						<li>
+						<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 							<a href="mailto:toniaroganti.com">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
