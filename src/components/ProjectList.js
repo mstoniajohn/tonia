@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaAngleDoubleRight } from 'react-icons/fa';
+// import { FaAngleDoubleRight } from 'react-icons/fa';
 
 import { projects } from './data';
 
@@ -36,7 +36,7 @@ const ProjectList = () => {
 					</div>
 					<article className="job-info">
 						<h3>{title}</h3>
-						{/* <img src={image} alt="images" /> */}
+						<img src={image} alt="images" />
 
 						<p className="job-date">{dates}</p>
 						<p>{description}</p>
