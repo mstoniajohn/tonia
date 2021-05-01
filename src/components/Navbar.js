@@ -20,10 +20,10 @@ function NavBar() {
 		<>
 			<nav className={navbar ? 'navbar active' : 'navbar'}>
 				<div className="nav-container">
-					<Link exact to="/" className="nav-logo">
+					{/* <Link exact to="/" className="nav-logo">
 						Tonia
 						<i className="fas fa-code"></i>
-					</Link>
+					</Link> */}
 
 					<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 						<li className="nav-item">

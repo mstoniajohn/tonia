@@ -1,4 +1,4 @@
-const data = [
+export const data = [
 	{
 		id: 'job1',
 		title: 'Web Developer',
@@ -36,5 +36,60 @@ const data = [
 		company: 'Rockhouse',
 	},
 ];
+export const projects = [
+	{
+		id: 'project1',
+		title: 'MERN E-Commerce',
+		image: '/images/logo.png',
+		order: 1,
+		live: 'https://smeproshop.herokuapp.com/',
+		code: '#',
+		dates: 'January 2021',
+		description:
+			'Setting DNS and hosting for my client and configuring mail servers.',
+	},
+	{
+		id: 'project2',
+		title: 'Url Shortener',
+		order: 2,
+		image: '/images/logo.png',
+		live: '',
+		dates: 'January 2021',
+		code: '',
+		description:
+			'An app that creates short urls and uses Mongo via Mongoose for database storage and CRUD operations. A user can also see the number of clicks each short url has from previous users.',
+	},
+	{
+		id: 'project3',
+		title: 'Color Generator',
+		order: 3,
+		dates: 'March 2021',
+		live: '/colors',
+		code: '',
+		description:
+			'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
+	},
+	{
+		id: 'project4',
+		title: 'SRT Converter',
+		order: 4,
+		dates: 'April 2021',
+		live: 'https://transcript-lemon.vercel.app/',
+		image: '/images/logo.png',
+		code: '',
+		description:
+			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
+	},
+	// {
+	// 	id: 'project5',
+	// 	title: 'Color Generator',
+	// 	order: 5,
+	// 	dates: 'March 2021',
+	// 	live: '/colors',
+	// 	code: '',
+	// 	description:
+	// 		'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
+	// },
+];
 
-export default data;
+// export default { data, projects };

@@ -3,7 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Experience from './Experience';
-import Projects from './Projects';
+// import Projects from './Projects';
+import ProjectList from './ProjectList';
 
 const Home = () => {
 	return (
@@ -21,6 +22,9 @@ const Home = () => {
 					<div className="underline"></div>
 					<p className="text-gray-600 dark:text-gray-300 text-2xl">
 						Welcome to my website...
+					</p>
+					<p className="text-gray-600 dark:text-gray-300">
+						This website was built with React & TailwindCSS
 					</p>
 
 					<ul className="grid grid-cols-3 gap-8 my-6 mx-auto">
@@ -85,8 +89,14 @@ const Home = () => {
 				</div>
 			</div>
 
+			<ProjectList />
+
+			<div
+				style={{ width: '80vw', margin: '30px auto', height: '1px' }}
+				className="underline"
+			></div>
+
 			<Experience />
-			<Projects />
 		</>
 	);
 };
