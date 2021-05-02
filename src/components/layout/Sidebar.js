@@ -16,7 +16,7 @@ const Sidebar = () => {
 	// const { logout, user, isAuthenticated } = authContext;
 
 	return (
-		<div className=" bg-white dark:bg-gray-800 ">
+		<div className="bg-white dark:bg-gray-800 text-dark dark:text-pink-200 ">
 			<IconContext.Provider value={{ color: '#fff' }}>
 				<div className="sidebar-navbar pr-4">
 					<Link to="#" className="menu-bars d-flex">
