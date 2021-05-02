@@ -54,8 +54,8 @@
 	--border-color: var(--primary);
 }
 .light {
-	--bg: var(--white);
-	--bg-nav: var(--white);
+	--bg: var(--clr-white);
+	--bg-nav: var(--clr-white);
 	--bg-dropdown: var(--gray0);
 	--text: var(--bg-c);
 	--border-color: var(--primary);
