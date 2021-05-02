@@ -52,7 +52,7 @@ const Sidebar = () => {
 				>
 					<ul className="sidebar-nav-menu-items" onClick={showSidebar}>
 						<li className="sidebar-navbar-toggle">
-							<Link to="" className="menu-bars">
+							<Link to="" className="menu-bars text-dark dark:text-pink-200">
 								<AiOutlineClose />
 							</Link>
 						</li>
@@ -61,7 +61,7 @@ const Sidebar = () => {
 							return (
 								<li
 									key={page.id}
-									className="nav-text text-white dark:text-gray-800"
+									className="nav-text text-dark dark:text-pink-800"
 								>
 									<Link to={page.url}>
 										{page.icon}
