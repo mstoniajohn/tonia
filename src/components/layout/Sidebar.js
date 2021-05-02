@@ -28,8 +28,9 @@ const Sidebar = () => {
 						<Link to="/">Tonia Roganti</Link>
 					</h4>
 					<div className="ml-auto grid gap-4 grid-cols-2">
-						<div className="grid gap-10 grid-cols-3">
+						<div className="grid gap-6 grid-cols-3">
 							<a
+								className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none"
 								// onClick={() => setTheme(colorTheme)}
 
 								href="https://www.linkedin.com/in/tonia-roganti/"
@@ -37,10 +38,16 @@ const Sidebar = () => {
 								<FaLinkedinIn />
 								{/* {colorTheme === 'light' ? 'dark theme' : 'light theme'} */}
 							</a>
-							<a href="https://github.com/mstoniajohn?tab=repositories">
+							<a
+								className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none"
+								href="https://github.com/mstoniajohn?tab=repositories"
+							>
 								<FaGithub />
 							</a>
-							<a href="mailto:toniaroganti@gmail.com">
+							<a
+								className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none"
+								href="mailto:toniaroganti@gmail.com"
+							>
 								<FaEnvelope />
 							</a>
 						</div>
