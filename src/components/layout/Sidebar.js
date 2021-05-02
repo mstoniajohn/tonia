@@ -6,7 +6,7 @@ import { links } from './data';
 
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
-import NavBar from '../Navbar';
+// import NavBar from '../Navbar';
 const Sidebar = () => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
