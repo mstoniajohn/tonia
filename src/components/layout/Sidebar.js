@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import { FiMoon } from 'react-icons/fi';
 import { links } from './data';
 import { ImSun } from 'react-icons/im';
 

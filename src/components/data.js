@@ -53,7 +53,7 @@ export const projects = [
 		title: 'Url Shortener',
 		order: 2,
 		image: '/images/mern.jpg',
-		live: '',
+		live: 'https://urlbitz.com/',
 		dates: 'January 2021',
 		code: '',
 		description:
