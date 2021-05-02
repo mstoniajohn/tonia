@@ -86,7 +86,7 @@ const Sidebar = () => {
 						})}
 					</ul>
 
-					<nav className="bottom-10 left-6 absolute">
+					<nav className="bottom-32 left-6 absolute">
 						<ul className="mt-auto  grid grid-cols-3 gap-10">
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a
