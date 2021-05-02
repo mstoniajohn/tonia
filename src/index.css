@@ -45,6 +45,7 @@
 	--max-width: 1170px;
 	--fixed-width: 620px;
 }
+
 a.link {
 	color: var(--primary) !important;
 }
@@ -143,7 +144,7 @@ input {
 	text-align: center;
 }
 
-.underline {
+.underlined {
 	width: 5rem;
 	height: 0.25rem;
 	margin-bottom: 1.25rem;
@@ -240,7 +241,7 @@ input.error {
 .btn-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	margin-bottom: 4rem;
 	flex-wrap: wrap;
 }

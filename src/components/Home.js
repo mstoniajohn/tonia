@@ -5,12 +5,14 @@ import { motion } from 'framer-motion';
 import Experience from './Experience';
 // import Projects from './Projects';
 import ProjectList from './ProjectList';
+import useDarkMode from '../hooks/useDarkMode';
 
 const Home = () => {
+	useDarkMode();
 	return (
-		<>
+		<div className="bg-white dark:bg-gray-800">
 			<div className="hero flex justify-center items-center min-h-screen">
-				<div className="bg-white dark:bg-gray-800 mx-auto flex flex-col items-center">
+				<div className=" mx-auto flex flex-col items-center">
 					<motion.h1
 						className="text-gray-900 dark:text-white text-4xl my-4"
 						initial={{ x: '-100vw' }}
@@ -19,7 +21,7 @@ const Home = () => {
 					>
 						Hello, I'm Tonia!
 					</motion.h1>
-					<div className="underline"></div>
+					<div className="underlined"></div>
 					<p className="text-gray-600 dark:text-gray-300 text-2xl">
 						Welcome to my website...
 					</p>
@@ -97,7 +99,7 @@ const Home = () => {
 			></div>
 
 			<Experience />
-		</>
+		</div>
 	);
 };
 

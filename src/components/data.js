@@ -39,20 +39,20 @@ export const data = [
 export const projects = [
 	{
 		id: 'project1',
-		title: 'MERN E-Commerce',
+		title: 'MERN Shop',
 		image: '/images/mern.jpg',
 		order: 1,
 		live: 'https://smeproshop.herokuapp.com/',
 		code: '#',
 		dates: 'January 2021',
 		description:
-			'Setting DNS and hosting for my client and configuring mail servers.',
+			'This is a MERN stack application that has the functionality to buy products and checkout with paypal. Mongdb is the data this project using Mongoose as an ORM. Redux is also used on the client side for state management.',
 	},
 	{
 		id: 'project2',
 		title: 'Url Shortener',
 		order: 2,
-		image: '/images/mern.png',
+		image: '/images/mern.jpg',
 		live: '',
 		dates: 'January 2021',
 		code: '',
@@ -77,8 +77,8 @@ export const projects = [
 		order: 4,
 		dates: 'April 2021',
 		live: 'https://transcript-lemon.vercel.app/',
-		image: '/images/mern.png',
-		code: '',
+		image: '/images/mern.jpg',
+		code: 'https://github.com/mstoniajohn/transcript',
 		description:
 			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
 	},

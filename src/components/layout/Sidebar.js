@@ -1,29 +1,47 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { links } from './data';
 
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
+// import useDarkMode from '../../hooks/useDarkMode';
 // import NavBar from '../Navbar';
 const Sidebar = () => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
+	// const [colorTheme, setTheme] = useDarkMode();
 	// const authContext = useContext(AuthContext);
 	// const { logout, user, isAuthenticated } = authContext;
 
 	return (
-		<>
+		<div className=" bg-white dark:bg-gray-800">
 			<IconContext.Provider value={{ color: '#fff' }}>
 				<div className="sidebar-navbar pr-4">
-					<Link to="#" className="menu-bars">
+					<Link to="#" className="menu-bars d-flex">
 						<FaBars onClick={showSidebar} />
 					</Link>
 
 					<h4 className="text-light d-flex align-items-center mt-3 ml-3">
 						Tonia Roganti
 					</h4>
+					<div className="ml-auto grid gap-4 grid-cols-3">
+						<a
+							// onClick={() => setTheme(colorTheme)}
+
+							href="https://www.linkedin.com/in/tonia-roganti/"
+						>
+							<FaLinkedinIn />
+							{/* {colorTheme === 'light' ? 'dark theme' : 'light theme'} */}
+						</a>
+						<a href="https://github.com/mstoniajohn?tab=repositories">
+							<FaGithub />
+						</a>
+						<a href="mailto:toniaroganti@gmail.com">
+							<FaEnvelope />
+						</a>
+					</div>
 				</div>
 				<nav
 					style={{ zIndex: '99' }}
@@ -35,20 +53,13 @@ const Sidebar = () => {
 								<AiOutlineClose />
 							</Link>
 						</li>
-						<li>
-							<Link className="text-light" to="/register">
-								Register
-							</Link>
-						</li>
 
-						<li>
-							<Link className="text-light" to="/login">
-								Login
-							</Link>
-						</li>
 						{links.map((page) => {
 							return (
-								<li key={page.id} className="nav-text">
+								<li
+									key={page.id}
+									className="nav-text text-white dark:text-gray-800"
+								>
 									<Link to={page.url}>
 										{page.icon}
 										<span>{page.text}</span>
@@ -59,7 +70,7 @@ const Sidebar = () => {
 					</ul>
 				</nav>
 			</IconContext.Provider>
-		</>
+		</div>
 	);
 };
 

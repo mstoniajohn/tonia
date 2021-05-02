@@ -1,8 +1,8 @@
 .sidebar-navbar {
-	background-color: #000;
+	background-color: #222;
 	height: 80px;
 	display: flex;
-	justify-content: flex-start;
+	/* justify-content: flex-start; */
 	align-items: center;
 	z-index: 99 !important;
 	position: fixed;
@@ -16,7 +16,7 @@
 }
 
 .sidebar-nav-menu {
-	background-color: #000;
+	background-color: #222;
 	width: 250px;
 	height: 100vh;
 	display: flex;
@@ -43,7 +43,7 @@
 
 .nav-text a {
 	text-decoration: none;
-	color: #f5f5f5;
+	/* color: #f5f5f5; */
 	font-size: 18px;
 	width: 95%;
 	height: 100%;
@@ -54,7 +54,7 @@
 }
 
 .nav-text a:hover {
-	background-color: #07192e;
+	background-color: var(--clr-primary-1);
 }
 
 .sidebar-nav-menu-items {
@@ -62,7 +62,7 @@
 }
 
 .sidebar-navbar-toggle {
-	background-color: #000;
+	background-color: #222;
 	width: 100%;
 	height: 80px;
 	display: flex;

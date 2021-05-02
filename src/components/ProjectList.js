@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 import { projects } from './data';
 
@@ -19,7 +19,7 @@ const ProjectList = () => {
 			<section className="section">
 				<div className="title pt-4">
 					<h2>Recent Projects</h2>
-					<div className="underline"></div>
+					<div className="underlined"></div>
 				</div>
 				<div className="jobs-center">
 					{/* btn container */}
@@ -36,12 +36,21 @@ const ProjectList = () => {
 					</div>
 					<article className="job-info">
 						<h3>{title}</h3>
-						<img className="object-contain h-48" src={image} alt="images" />
+						<img
+							className="object-contain h-48 mb-2"
+							src={image}
+							alt="images"
+						/>
 
 						<p className="job-date">{dates}</p>
 						<p>{description}</p>
-						<div className="">
-							<a href={live}>Live Demo</a> <a href={code}>Github</a>
+						<div className="flex">
+							<a className="underline" href={live}>
+								<FaLink />
+							</a>{' '}
+							<a className="underline ml-4" href={code}>
+								<FaGithub />
+							</a>
 						</div>
 					</article>
 				</div>
