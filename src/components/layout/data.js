@@ -21,7 +21,7 @@ export const links = [
 	},
 	{
 		id: 2,
-		url: '/project-list',
+		url: '/projects',
 		text: 'Projects',
 		icon: <FaUserFriends />,
 	},

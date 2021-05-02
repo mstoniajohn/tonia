@@ -16,7 +16,7 @@ const Experience = () => {
 				justifyContent: 'center',
 			}}
 		>
-			<section className="section">
+			<section className="section py-16">
 				<div className="title">
 					<h2>Experience</h2>
 					<div className="underlined"></div>

@@ -153,7 +153,7 @@ input {
 	margin-right: auto;
 }
 .title {
-	margin-bottom: 4rem;
+	margin: 5rem 0 2rem;
 	text-align: center;
 }
 .fas::before,
@@ -238,12 +238,25 @@ input.error {
 	margin: 0 auto;
 	max-width: var(--max-width);
 }
+.jobs-center-projects {
+	width: 90vw;
+	margin: 0 auto;
+	/* display: grid;
+	grid-template-columns: 200px 1fr;
+	column-gap: 4rem; */
+}
 .btn-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 4rem;
 	flex-wrap: wrap;
+}
+.btn-container-projects {
+	display: flex;
+
+	justify-content: center;
+	margin-bottom: 4rem;
 }
 .job-btn {
 	background: transparent;

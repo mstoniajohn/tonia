@@ -21,9 +21,9 @@ const ProjectList = () => {
 					<h2>Recent Projects</h2>
 					<div className="underlined"></div>
 				</div>
-				<div className="jobs-center">
+				<div className="jobs-center-projects">
 					{/* btn container */}
-					<div className="btn-container">
+					<div className="btn-container-projects ">
 						{projects.map((project, index) => (
 							<button
 								key={project.id}
@@ -34,22 +34,22 @@ const ProjectList = () => {
 							</button>
 						))}
 					</div>
-					<article className="job-info">
-						<h3>{title}</h3>
+					<article className="job-info shadow p-3 max-w-sm  mx-auto">
+						<h3 className="text-center">{title}</h3>
 						<img
-							className="object-contain h-48 mb-2"
+							className="object-contain h-48 rounded mb-2 mx-auto"
 							src={image}
 							alt="images"
 						/>
 
-						<p className="job-date">{dates}</p>
-						<p>{description}</p>
-						<div className="flex">
-							<a className="underline" href={live}>
-								<FaLink />
+						<p className="job-date text-center">{dates}</p>
+						<p className="">{description}</p>
+						<div className="flex justify-center">
+							<a className="text-center" href={live}>
+								<FaLink className="text-2xl" />
 							</a>{' '}
-							<a className="underline ml-4" href={code}>
-								<FaGithub />
+							<a className="text-center ml-4" href={code}>
+								<FaGithub className="text-2xl" />
 							</a>
 						</div>
 					</article>

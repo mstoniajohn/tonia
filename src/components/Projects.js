@@ -1,11 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { projects } from './data';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
 const Projects = () => {
+	// const [value, setValue] = useState(0);
+	// const { description, live, code, title, dates, image } = projects[value];
+
 	return (
-		<>
-			<section className="section">
+		<div className="py-16">
+			<div className="title">
+				<h2>Projects</h2>
+				<div className="underline"></div>
+			</div>
+			<div className="grid gap-4 grid-cols-3 p-3">
+				{projects.map((project) => {
+					const { title, image, code, live, id, dates, description } = project;
+					return (
+						<article key={id} className="job-info shadow p-3 max-w-sm  mx-auto">
+							<h3 className="text-center">{title}</h3>
+							<img
+								className="object-contain h-48 rounded mb-2 mx-auto"
+								src={image}
+								alt="images"
+							/>
+
+							<p className="job-date text-center">{dates}</p>
+							<p className="">{description}</p>
+							<div className="flex justify-center">
+								<a className="text-center" href={live}>
+									<FaLink className="text-2xl" />
+								</a>{' '}
+								<a className="text-center ml-4" href={code}>
+									<FaGithub className="text-2xl" />
+								</a>
+							</div>
+						</article>
+					);
+				})}
+			</div>
+			{/* <section className="section">
 				<div className="title">
 					<h2>Projects</h2>
 					<div className="underline"></div>
@@ -179,8 +214,8 @@ const Projects = () => {
 						</p>
 					</motion.div>
 				</motion.div>
-			</section>
-		</>
+			</section> */}
+		</div>
 	);
 };
 
