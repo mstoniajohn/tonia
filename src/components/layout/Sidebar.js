@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { FiMoon } from 'react-icons/fi';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import { links } from './data';
-import { ImSun } from 'react-icons/im';
 
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
@@ -29,7 +28,7 @@ const Sidebar = () => {
 						<Link to="/">Tonia Roganti</Link>
 					</h4>
 					<div className="ml-auto grid gap-4 grid-cols-2">
-						<div className="grid gap-2 grid-cols-3">
+						<div className="grid gap-10 grid-cols-3">
 							<a
 								// onClick={() => setTheme(colorTheme)}
 
@@ -45,11 +44,14 @@ const Sidebar = () => {
 								<FaEnvelope />
 							</a>
 						</div>
-						<span className="p-0 ml-auto" onClick={() => setTheme(colorTheme)}>
+						<span
+							className="p-0 ml-auto pr-4"
+							onClick={() => setTheme(colorTheme)}
+						>
 							{colorTheme === 'light' ? (
-								<FiMoon className="text-lg" />
+								<FaMoon className="text-lg" />
 							) : (
-								<ImSun className="text-lg" />
+								<FaSun className="text-lg" />
 							)}
 						</span>
 					</div>
@@ -77,9 +79,9 @@ const Sidebar = () => {
 						})}
 					</ul>
 
-					<nav className="bottom-10 left-3 absolute">
-						<ul className="mt-auto  grid grid-cols-3 gap-6">
-							<li>
+					<nav className="bottom-10 left-6 absolute">
+						<ul className="mt-auto  grid grid-cols-3 gap-10">
+							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a
 									// onClick={() => setTheme(colorTheme)}
 
@@ -89,12 +91,12 @@ const Sidebar = () => {
 									{/* {colorTheme === 'light' ? 'dark theme' : 'light theme'} */}
 								</a>
 							</li>
-							<li>
+							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a href="https://github.com/mstoniajohn?tab=repositories">
 									<FaGithub />
 								</a>
 							</li>
-							<li>
+							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a href="mailto:toniaroganti@gmail.com">
 									<FaEnvelope />
 								</a>

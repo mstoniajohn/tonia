@@ -6,6 +6,7 @@ import Experience from './Experience';
 // import Projects from './Projects';
 import ProjectList from './ProjectList';
 import useDarkMode from '../hooks/useDarkMode';
+import { FaArrowDown } from 'react-icons/fa';
 
 const Home = () => {
 	useDarkMode();
@@ -24,7 +25,7 @@ const Home = () => {
 					<div className="underline"></div>
 					<p className=" text-2xl">Welcome to my website...</p>
 					<p className="">This website was built with React & TailwindCSS</p>
-
+					{/* 
 					<ul className="grid grid-cols-3 gap-8 my-6 mx-auto">
 						<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 							<a href="https://github.com/mstoniajohn?tab=repositories">
@@ -69,19 +70,10 @@ const Home = () => {
 								</svg>
 							</a>
 						</li>
-					</ul>
-					<p className="animate-bounce text-center mx-auto font-bold ">
+					</ul> */}
+					<p className="animate-bounce text-center mx-auto font-bold">
 						<Link to="/projects">
-							<svg
-								className="mx-auto text-center  "
-								width="24"
-								height="24"
-								xmlns="http://www.w3.org/2000/svg"
-								fillRule="evenodd"
-								clipRule="evenodd"
-							>
-								<path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-							</svg>
+							<FaArrowDown className="text-3xl" />
 						</Link>
 					</p>
 				</div>
