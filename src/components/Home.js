@@ -10,11 +10,11 @@ import useDarkMode from '../hooks/useDarkMode';
 const Home = () => {
 	useDarkMode();
 	return (
-		<div className="bg-white dark:bg-gray-800">
+		<div className="">
 			<div className="hero flex justify-center items-center min-h-screen">
 				<div className=" mx-auto flex flex-col items-center">
 					<motion.h1
-						className="text-gray-900 dark:text-white text-4xl my-4"
+						className="text-4xl my-4"
 						initial={{ x: '-100vw' }}
 						animate={{ x: '0' }}
 						transition={{ duration: 1 }}
@@ -22,12 +22,8 @@ const Home = () => {
 						Hello, I'm Tonia!
 					</motion.h1>
 					<div className="underlined"></div>
-					<p className="text-gray-600 dark:text-gray-300 text-2xl">
-						Welcome to my website...
-					</p>
-					<p className="text-gray-600 dark:text-gray-300">
-						This website was built with React & TailwindCSS
-					</p>
+					<p className=" text-2xl">Welcome to my website...</p>
+					<p className="">This website was built with React & TailwindCSS</p>
 
 					<ul className="grid grid-cols-3 gap-8 my-6 mx-auto">
 						<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
@@ -75,7 +71,7 @@ const Home = () => {
 						</li>
 					</ul>
 					<p className="animate-bounce text-center mx-auto font-bold ">
-						<Link to="/Experience">
+						<Link to="/projects">
 							<svg
 								className="mx-auto text-center  "
 								width="24"

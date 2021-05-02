@@ -19,7 +19,7 @@ const ProjectList = () => {
 			<section className="section py-16">
 				<div className="title ">
 					<h2>Recent Projects</h2>
-					<div className="underlined"></div>
+					<div className="underline"></div>
 				</div>
 				<div className="jobs-center">
 					{/* btn container */}
@@ -34,7 +34,7 @@ const ProjectList = () => {
 							</button>
 						))}
 					</div>
-					<article className="job-info shadow p-3 max-w-sm  mx-auto">
+					<article className="job-info shadow p-3 max-w-sm md:mx-0 mx-auto">
 						<h3 className="text-center">{title}</h3>
 						<img
 							className="object-contain h-48 rounded mb-2 mx-auto"
