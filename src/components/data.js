@@ -52,7 +52,7 @@ export const projects = [
 		id: 'project2',
 		title: 'Url Shortener',
 		order: 2,
-		image: '/images/logo.png',
+		image: '/images/mern.png',
 		live: '',
 		dates: 'January 2021',
 		code: '',
@@ -77,7 +77,7 @@ export const projects = [
 		order: 4,
 		dates: 'April 2021',
 		live: 'https://transcript-lemon.vercel.app/',
-		image: '/images/logo.png',
+		image: '/images/mern.png',
 		code: '',
 		description:
 			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
