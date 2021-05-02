@@ -7,8 +7,8 @@ import {
 	FaSketch,
 	FaHome,
 	FaUserFriends,
-	FaFolderOpen,
-	FaCalendarAlt,
+	// FaFolderOpen,
+	// FaCalendarAlt,
 	FaWpforms,
 } from 'react-icons/fa';
 import { IoLogOut, IoLogIn } from 'react-icons/io5';

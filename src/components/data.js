@@ -40,7 +40,7 @@ export const projects = [
 	{
 		id: 'project1',
 		title: 'MERN E-Commerce',
-		image: '/images/logo.png',
+		image: '/images/mern.jpg',
 		order: 1,
 		live: 'https://smeproshop.herokuapp.com/',
 		code: '#',
@@ -64,6 +64,8 @@ export const projects = [
 		title: 'Color Generator',
 		order: 3,
 		dates: 'March 2021',
+		image: '/images/colors.jpg',
+
 		live: '/colors',
 		code: '',
 		description:
