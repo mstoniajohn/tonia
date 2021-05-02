@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { projects } from './data';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
@@ -14,7 +14,7 @@ const Projects = () => {
 				<h2>Projects</h2>
 				<div className="underline"></div>
 			</div>
-			<div className="grid gap-4 grid-cols-3 p-3">
+			<motion.div className="grid gap-4 grid-cols-3 p-3">
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
@@ -39,7 +39,7 @@ const Projects = () => {
 						</article>
 					);
 				})}
-			</div>
+			</motion.div>
 			{/* <section className="section">
 				<div className="title">
 					<h2>Projects</h2>
