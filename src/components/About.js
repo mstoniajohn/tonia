@@ -13,7 +13,7 @@ export default function About() {
 			<section className="section">
 				<div className="title">
 					<h2>About Me</h2>
-					<div className="underlined"></div>
+					<div className="underline"></div>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 					<motion.div

@@ -14,7 +14,7 @@ const Projects = () => {
 				<h2>Projects</h2>
 				<div className="underline"></div>
 			</div>
-			<motion.div className="grid gap-4 grid-cols-3 p-3">
+			<motion.div className="p-3 grid grid-cols-1 lg:grid-cols-3 gap-4">
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
