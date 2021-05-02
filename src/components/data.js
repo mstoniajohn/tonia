@@ -40,10 +40,10 @@ export const projects = [
 	{
 		id: 'project1',
 		title: 'MERN Shop',
-		image: '/images/mern.jpg',
+		image: '/images/shop.jpg',
 		order: 1,
 		live: 'https://smeproshop.herokuapp.com/',
-		code: '#',
+		code: 'https://github.com/mstoniajohn/smeproshop',
 		dates: 'January 2021',
 		description:
 			'This is a MERN stack application that has the functionality to buy products and checkout with paypal. Mongdb is the data this project using Mongoose as an ORM. Redux is also used on the client side for state management.',
@@ -55,19 +55,19 @@ export const projects = [
 		image: '/images/mern.jpg',
 		live: 'https://urlbitz.com/',
 		dates: 'January 2021',
-		code: '',
+		code: 'https://github.com/mstoniajohn/url-shortener',
 		description:
 			'An app that creates short urls and uses Mongo via Mongoose for database storage and CRUD operations. A user can also see the number of clicks each short url has from previous users.',
 	},
 	{
 		id: 'project3',
-		title: 'Color Generator',
+		title: 'Colors',
 		order: 3,
 		dates: 'March 2021',
 		image: '/images/colors.jpg',
 
 		live: '/colors',
-		code: '',
+		code: '#',
 		description:
 			'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
 	},
@@ -77,7 +77,7 @@ export const projects = [
 		order: 4,
 		dates: 'April 2021',
 		live: 'https://transcript-lemon.vercel.app/',
-		image: '/images/mern.jpg',
+		image: '/images/srt.jpg',
 		code: 'https://github.com/mstoniajohn/transcript',
 		description:
 			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
