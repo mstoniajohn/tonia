@@ -21,9 +21,9 @@ const ProjectList = () => {
 					<h2>Recent Projects</h2>
 					<div className="underlined"></div>
 				</div>
-				<div className="jobs-center-projects">
+				<div className="jobs-center">
 					{/* btn container */}
-					<div className="btn-container-projects ">
+					<div className="btn-container">
 						{projects.map((project, index) => (
 							<button
 								key={project.id}

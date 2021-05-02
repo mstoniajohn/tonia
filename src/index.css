@@ -252,12 +252,11 @@ input.error {
 	margin-bottom: 4rem;
 	flex-wrap: wrap;
 }
-.btn-container-projects {
+/* .btn-container-projects {
 	display: flex;
-
 	justify-content: center;
 	margin-bottom: 4rem;
-}
+} */
 .job-btn {
 	background: transparent;
 	border-color: transparent;

@@ -1,5 +1,5 @@
 .sidebar-navbar {
-	background-color: #222;
+	/* background-color: #222; */
 	height: 80px;
 	display: flex;
 	/* justify-content: flex-start; */
@@ -16,7 +16,7 @@
 }
 
 .sidebar-nav-menu {
-	background-color: #222;
+	/* background-color: #222; */
 	width: 250px;
 	height: 100vh;
 	display: flex;
@@ -62,7 +62,7 @@
 }
 
 .sidebar-navbar-toggle {
-	background-color: #222;
+	/* background-color: #222; */
 	width: 100%;
 	height: 80px;
 	display: flex;

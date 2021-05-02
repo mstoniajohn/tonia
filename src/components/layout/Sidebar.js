@@ -6,12 +6,12 @@ import { links } from './data';
 
 import './Sidebar.css';
 import { IconContext } from 'react-icons';
-// import useDarkMode from '../../hooks/useDarkMode';
+import useDarkMode from '../../hooks/useDarkMode';
 // import NavBar from '../Navbar';
 const Sidebar = () => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
-	// const [colorTheme, setTheme] = useDarkMode();
+	const [colorTheme, setTheme] = useDarkMode();
 	// const authContext = useContext(AuthContext);
 	// const { logout, user, isAuthenticated } = authContext;
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
 					<h4 className="text-light d-flex align-items-center mt-3 ml-3">
 						Tonia Roganti
 					</h4>
-					<div className="ml-auto grid gap-4 grid-cols-3">
+					<div className="ml-auto grid gap-2 grid-cols-4">
 						<a
 							// onClick={() => setTheme(colorTheme)}
 
@@ -40,6 +40,9 @@ const Sidebar = () => {
 						</a>
 						<a href="mailto:toniaroganti@gmail.com">
 							<FaEnvelope />
+						</a>
+						<a onClick={() => setTheme(colorTheme)} href="#">
+							{colorTheme === 'light' ? 'dark' : 'light'}
 						</a>
 					</div>
 				</div>
