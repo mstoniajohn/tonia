@@ -48,7 +48,11 @@ const Sidebar = () => {
 				</div>
 				<nav
 					style={{ zIndex: '99' }}
-					className={sidebar ? 'sidebar-nav-menu active' : 'sidebar-nav-menu'}
+					className={
+						sidebar
+							? 'sidebar-nav-menu bg-white dark:bg-gray-800 text-dark dark:text-pink-300 active'
+							: 'sidebar-nav-menu bg-white dark:bg-gray-800 text-dark dark:text-pink-300'
+					}
 				>
 					<ul className="sidebar-nav-menu-items" onClick={showSidebar}>
 						<li className="sidebar-navbar-toggle">
@@ -61,7 +65,7 @@ const Sidebar = () => {
 							return (
 								<li
 									key={page.id}
-									className="nav-text text-dark dark:text-pink-800"
+									className="nav-text text-dark dark:text-pink-200"
 								>
 									<Link to={page.url}>
 										{page.icon}

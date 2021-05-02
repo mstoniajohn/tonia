@@ -45,7 +45,14 @@
 	--max-width: 1170px;
 	--fixed-width: 620px;
 }
-
+.dark {
+	background-color: rgba(31, 41, 55, 1);
+	color: #fff;
+}
+.light {
+	background-color: --var(--clr-white);
+	color: rgba(31, 41, 55, 1);
+}
 a.link {
 	color: var(--primary) !important;
 }
