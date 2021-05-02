@@ -41,9 +41,9 @@ const Sidebar = () => {
 						<a href="mailto:toniaroganti@gmail.com">
 							<FaEnvelope />
 						</a>
-						<a onClick={() => setTheme(colorTheme)} href="#">
+						<span onClick={() => setTheme(colorTheme)}>
 							{colorTheme === 'light' ? 'dark' : 'light'}
-						</a>
+						</span>
 					</div>
 				</div>
 				<nav
