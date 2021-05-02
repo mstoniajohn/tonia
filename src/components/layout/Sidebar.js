@@ -63,10 +63,7 @@ const Sidebar = () => {
 
 						{links.map((page) => {
 							return (
-								<li
-									key={page.id}
-									className="nav-text text-dark dark:text-pink-200"
-								>
+								<li key={page.id} className="nav-text">
 									<Link to={page.url}>
 										{page.icon}
 										<span>{page.text}</span>

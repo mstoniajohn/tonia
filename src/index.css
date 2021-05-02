@@ -44,6 +44,7 @@
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 	--max-width: 1170px;
 	--fixed-width: 620px;
+	--bg-c: rgba(31, 41, 55, 1);
 }
 .dark {
 	background-color: rgba(31, 41, 55, 1);
@@ -52,6 +53,21 @@
 .light {
 	background-color: --var(--clr-white);
 	color: rgba(31, 41, 55, 1);
+}
+.dark {
+	--bg: var(--bg-c);
+	--bg-nav: var(--bg-c);
+	--bg-dropdown: var(--gray6);
+	--text: var(--clr-white);
+	--text-secondary: var(--gray1);
+	--border-color: var(--primary);
+}
+.light {
+	--bg: var(--white);
+	--bg-nav: var(--white);
+	--bg-dropdown: var(--gray0);
+	--text: var(--bg-c);
+	--border-color: var(--primary);
 }
 a.link {
 	color: var(--primary) !important;
