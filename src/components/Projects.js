@@ -14,11 +14,11 @@ const Projects = () => {
 				<h2>Projects</h2>
 				<div className="underline"></div>
 			</div>
-			<motion.div className="grid gap-4 grid-cols-3 p-3">
+			<motion.div className="grid gap-4 grid-cols-4 p-3">
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
-						<article key={id} className="job-info shadow p-3 max-w-sm  mx-auto">
+						<article key={id} className="job-info shadow p-3  mx-auto">
 							<h3 className="text-center">{title}</h3>
 							<img
 								className="object-contain h-48 rounded mb-2 mx-auto"
