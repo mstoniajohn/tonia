@@ -34,7 +34,7 @@ const ProjectList = () => {
 							</button>
 						))}
 					</div>
-					<article className="job-info shadow p-3 max-w-sm md:mx-0 mx-auto">
+					<article className="job-info shadow-xl p-3 max-w-sm md:mx-0 mx-auto">
 						<h3 className="text-center">{title}</h3>
 						<img
 							className="object-contain h-48 rounded mb-2 mx-auto"

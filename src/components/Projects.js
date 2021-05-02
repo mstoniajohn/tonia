@@ -18,7 +18,7 @@ const Projects = () => {
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
-						<article key={id} className="job-info shadow p-3  mx-auto">
+						<article key={id} className="job-info shadow-xl p-3  mx-auto">
 							<h3 className="text-center">{title}</h3>
 							<img
 								className="object-contain h-48 rounded mb-2 mx-auto"
