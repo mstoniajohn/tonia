@@ -35,14 +35,22 @@ const SingleColor = () => {
 	};
 
 	return (
-		<>
-			<section className="section">
+		<div
+			className="py-16"
+			style={{
+				display: 'flex',
+				// alignItems: 'center',
+				flexDirection: 'column',
+				justifyContent: 'center',
+			}}
+		>
+			<section className="section pt-10 text-center mx-auto">
 				<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
 					Color Generator
 				</h2>
-				<div className="underlined"></div>
+				<div className="underline"></div>
 			</section>
-			<section className="container" style={{ margin: '0 auto' }}>
+			<section className="container mx-auto">
 				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
@@ -59,7 +67,7 @@ const SingleColor = () => {
 			</section>
 			<section
 				style={{
-					backgroundColor: 'rgba(255, 255, 255,0.5)',
+					// backgroundColor: 'rgba(255, 255, 255,0.5)',
 					display: 'flex',
 					justifyContent: 'center',
 					color: 'red',
@@ -119,7 +127,7 @@ const SingleColor = () => {
 					);
 				})}
 			</section> */}
-		</>
+		</div>
 	);
 };
 

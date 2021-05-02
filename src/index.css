@@ -139,6 +139,7 @@ p {
 input {
 	border-color: transparent;
 	padding: 0.5rem 1rem;
+	color: #000;
 	font-size: 16px !important;
 	border-top-left-radius: var(--radius);
 	border-bottom-left-radius: var(--radius);
@@ -190,7 +191,7 @@ input {
 	border-bottom-right-radius: var(--radius);
 	text-transform: capitalize;
 	color: var(--text);
-	/* border: 1px solid var(--primary); */
+	border: 1px solid var(--primary);
 	cursor: pointer;
 }
 
