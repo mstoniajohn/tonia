@@ -16,8 +16,8 @@ const ProjectList = () => {
 				justifyContent: 'center',
 			}}
 		>
-			<section className="section">
-				<div className="title pt-4">
+			<section className="section py-16">
+				<div className="title ">
 					<h2>Recent Projects</h2>
 					<div className="underlined"></div>
 				</div>

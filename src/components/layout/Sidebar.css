@@ -1,5 +1,5 @@
 .sidebar-navbar {
-	/* background-color: #222 */
+	/* background-color: var(--bg); */
 	height: 80px;
 	display: flex;
 	/* justify-content: flex-start; */
@@ -16,7 +16,7 @@
 }
 
 .sidebar-nav-menu {
-	background-color: var(--bg-c);
+	/* background-color: var(--bg); */
 	width: 250px;
 	height: 100vh;
 	display: flex;

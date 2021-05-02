@@ -10,7 +10,7 @@ export default function About() {
 				justifyContent: 'center',
 			}}
 		>
-			<section className="section">
+			<section className="section py-16">
 				<div className="title">
 					<h2>About Me</h2>
 					<div className="underline"></div>

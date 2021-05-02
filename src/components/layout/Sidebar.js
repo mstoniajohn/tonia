@@ -16,7 +16,7 @@ const Sidebar = () => {
 	// const { logout, user, isAuthenticated } = authContext;
 
 	return (
-		<div className="bg-white dark:bg-gray-800 text-dark dark:text-pink-200 ">
+		<div className="">
 			<IconContext.Provider value={{ color: '#fff' }}>
 				<div className="sidebar-navbar pr-4">
 					<Link to="#" className="menu-bars d-flex">
@@ -24,7 +24,7 @@ const Sidebar = () => {
 					</Link>
 
 					<h4 className="text-light d-flex align-items-center mt-3 ml-3">
-						Tonia Roganti
+						<Link to="/">Tonia Roganti</Link>
 					</h4>
 					<div className="ml-auto grid gap-2 grid-cols-4">
 						<a
@@ -48,15 +48,11 @@ const Sidebar = () => {
 				</div>
 				<nav
 					style={{ zIndex: '99' }}
-					className={
-						sidebar
-							? 'sidebar-nav-menu bg-white dark:bg-gray-800 text-dark dark:text-pink-300 active'
-							: 'sidebar-nav-menu bg-white dark:bg-gray-800 text-dark dark:text-pink-300'
-					}
+					className={sidebar ? 'sidebar-nav-menu  active' : 'sidebar-nav-menu '}
 				>
 					<ul className="sidebar-nav-menu-items" onClick={showSidebar}>
 						<li className="sidebar-navbar-toggle">
-							<Link to="" className="menu-bars text-dark dark:text-pink-200">
+							<Link to="" className="menu-bars">
 								<AiOutlineClose />
 							</Link>
 						</li>
