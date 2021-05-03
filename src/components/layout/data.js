@@ -7,6 +7,7 @@ import {
 	FaSketch,
 	FaHome,
 	FaUserFriends,
+	FaCodeBranch,
 	// FaFolderOpen,
 	// FaCalendarAlt,
 	FaWpforms,
@@ -23,7 +24,7 @@ export const links = [
 		id: 2,
 		url: '/projects',
 		text: 'Projects',
-		icon: <FaUserFriends />,
+		icon: <FaCodeBranch />,
 	},
 	{
 		id: 2,

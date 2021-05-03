@@ -19,7 +19,7 @@ const Sidebar = () => {
 	return (
 		<div className="relative">
 			<IconContext.Provider value={{ color: '#fff' }}>
-				<div className="sidebar-navbar pr-6">
+				<div className="sidebar-navbar ml-0">
 					<Link to="#" className="menu-bars d-flex">
 						<FaBars onClick={showSidebar} />
 					</Link>

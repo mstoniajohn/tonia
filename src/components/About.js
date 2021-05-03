@@ -77,16 +77,7 @@ export default function About() {
 					>
 						<div className=" mb-4">
 							<h3 className="mb-3 text-2xl">Skills</h3>
-							<div className="mx-auto mb-4 grid grid-cols-1 md:grid-cols-2 gap-2">
-								<div className="mr-4 mb-4">
-									<i
-										className="fas fa-database fa-3x align-middle"
-										ariahidden="true"
-									>
-										{' '}
-									</i>{' '}
-									<span className="h6 align-middle ml-1">React</span>
-								</div>
+							<div className="mx-auto mb-4 grid grid-cols-2 md:grid-cols-4 gap-2">
 								<div className="mr-4 mb-4">
 									<i
 										className="fab fa-js-square fa-3x align-middle"
@@ -95,6 +86,24 @@ export default function About() {
 										{' '}
 									</i>{' '}
 									<span className="h6 align-middle  ml-1">JavaScript</span>
+								</div>
+								<div className="mr-4 mb-4">
+									<i
+										className="fab fa-react fa-3x align-middle"
+										ariahidden="true"
+									>
+										{' '}
+									</i>{' '}
+									<span className="h6 align-middle ml-1">React</span>
+								</div>
+								<div className="mr-4 mb-4">
+									<i
+										className="fab fa-vuejs fa-3x align-middle"
+										ariahidden="true"
+									>
+										{' '}
+									</i>{' '}
+									<span className="h6 align-middle ml-1">Vue</span>
 								</div>
 								<div className="mr-4 mb-4">
 									<i
