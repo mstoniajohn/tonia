@@ -12,7 +12,8 @@ import {
 	// FaCalendarAlt,
 	FaWpforms,
 } from 'react-icons/fa';
-import { IoLogOut, IoLogIn } from 'react-icons/io5';
+import { SiAboutDotMe } from 'react-icons/si';
+import { IoLogIn } from 'react-icons/io5';
 export const links = [
 	{
 		id: 1,
@@ -36,7 +37,7 @@ export const links = [
 		id: 3,
 		url: '/about',
 		text: 'Info',
-		icon: <IoLogOut />,
+		icon: <SiAboutDotMe />,
 	},
 ];
 export const linksGuest = [

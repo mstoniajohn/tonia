@@ -40,6 +40,7 @@
 	padding: 8px 0px 8px 16px;
 	list-style: none;
 	height: 60px;
+	color: var(--primary);
 }
 
 .nav-text a {
