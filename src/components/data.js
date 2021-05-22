@@ -61,16 +61,16 @@ export const projects = [
 	},
 	{
 		id: 'project3',
-		title: 'Colors',
+		title: 'Realtime Chat',
 		order: 3,
-		dates: 'March 2021',
-		image: '/images/colors.jpg',
-
-		live: '/colors',
-		code: '#',
+		dates: 'Feb 2021',
+		live: 'https://spacechatroom.com/',
+		image: '/images/chat.png',
+		code: 'https://github.com/mstoniajohn/firechat',
 		description:
-			'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
+			'This application was built using Firebase for authentication users and Cloud Firestore for storing users message data. A user can login with google and write messages to the chat and read their messages instantly in the chat.',
 	},
+
 	{
 		id: 'project4',
 		title: 'SRT Converter',
@@ -82,16 +82,19 @@ export const projects = [
 		description:
 			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
 	},
-	// {
-	// 	id: 'project5',
-	// 	title: 'Color Generator',
-	// 	order: 5,
-	// 	dates: 'March 2021',
-	// 	live: '/colors',
-	// 	code: '',
-	// 	description:
-	// 		'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
-	// },
+
+	{
+		id: 'project5',
+		title: 'Colors',
+		order: 5,
+		dates: 'March 2021',
+		image: '/images/colors.jpg',
+
+		live: '/colors',
+		code: '#',
+		description:
+			'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
+	},
 ];
 
 // export default { data, projects };
