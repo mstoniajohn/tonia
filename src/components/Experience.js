@@ -19,7 +19,7 @@ const Experience = () => {
 			<section className="section py-16">
 				<div className="title">
 					<h2>Experience</h2>
-					<div className="underline"></div>
+					<div className="underlined"></div>
 				</div>
 				<div className="jobs-center">
 					{/* btn container */}

@@ -13,7 +13,7 @@ export default function About() {
 			<section className="section py-16">
 				<div className="title">
 					<h2>About Me</h2>
-					<div className="underline"></div>
+					<div className="underlined"></div>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 					<motion.div
@@ -64,9 +64,22 @@ export default function About() {
 					<div>
 						<h3 className="mb-2 text-2xl">Certificates</h3>
 						<div className="list-group">
-							<path className="list-item">Harvard CS50 2021</path>
+							<p className="list-item underline">
+								<a
+									href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
+									target="_blank"
+								>
+									Harvard CS50 2021{' '}
+								</a>
+							</p>
 
-							<p className="list-item">W3School - JavaScript 2020</p>
+							<p className="list-item underline">
+								{' '}
+								<a href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com">
+									{' '}
+									W3School - JavaScript 2020
+								</a>
+							</p>
 						</div>
 					</div>
 

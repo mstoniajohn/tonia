@@ -48,7 +48,7 @@ const SingleColor = () => {
 				<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
 					Color Generator
 				</h2>
-				<div className="underline"></div>
+				<div className="underlined"></div>
 			</section>
 			<section className="container mx-auto">
 				<form onSubmit={handleSubmit}>

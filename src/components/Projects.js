@@ -12,7 +12,7 @@ const Projects = () => {
 		<div className="py-16">
 			<div className="title">
 				<h2>Projects</h2>
-				<div className="underline"></div>
+				<div className="underlined"></div>
 			</div>
 			<motion.div className="p-3 grid grid-cols-1 lg:grid-cols-3 gap-4">
 				{projects.map((project) => {

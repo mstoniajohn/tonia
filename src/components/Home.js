@@ -22,7 +22,7 @@ const Home = () => {
 					>
 						Hello, I'm Tonia!
 					</motion.h1>
-					<div className="underline"></div>
+					<div className="underlined"></div>
 					<p className=" text-2xl">Welcome to my website...</p>
 					<p className="">This website was built with React & TailwindCSS</p>
 					{/* 

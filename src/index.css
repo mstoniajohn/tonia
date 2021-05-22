@@ -162,8 +162,10 @@ input {
 .loading {
 	text-align: center;
 }
-
-.underline {
+.blue-t {
+	color: var(--clr-primary-5);
+}
+.underlined {
 	width: 5rem;
 	height: 0.25rem;
 	margin-bottom: 1.25rem;
