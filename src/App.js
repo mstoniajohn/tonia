@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import SingleColor from './components/SingleColor';
 import ProjectList from './components/ProjectList';
 import Sidebar from './components/layout/Sidebar';
+import Resume from './components/Resume';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 						<Route path="/projects" component={Projects} />
 						<Route path="/about" component={About} />
 						<Route path="/project-list" component={ProjectList} />
+						<Route path="/resume" component={Resume} />
 
 						<Route path="/experience">
 							<Experience />

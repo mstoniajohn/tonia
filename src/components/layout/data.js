@@ -8,7 +8,7 @@ import {
 	FaHome,
 	FaUserFriends,
 	FaCodeBranch,
-	// FaFolderOpen,
+	// FaFilePdf,
 	// FaCalendarAlt,
 	FaWpforms,
 } from 'react-icons/fa';
@@ -28,17 +28,23 @@ export const links = [
 		icon: <FaCodeBranch />,
 	},
 	{
-		id: 2,
+		id: 3,
 		url: '/experience',
 		text: 'Experience',
 		icon: <FaUserFriends />,
 	},
 	{
-		id: 3,
+		id: 4,
 		url: '/about',
 		text: 'Info',
 		icon: <SiAboutDotMe />,
 	},
+	// {
+	// 	id: 5,
+	// 	url: '/resume',
+	// 	text: 'Resume',
+	// 	icon: <FaFilePdf />,
+	// },
 ];
 export const linksGuest = [
 	{
