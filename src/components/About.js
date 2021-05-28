@@ -75,7 +75,10 @@ export default function About() {
 
 							<p className="list-item underline">
 								{' '}
-								<a href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com">
+								<a
+									href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com"
+									target="_blank"
+								>
 									{' '}
 									W3School - JavaScript 2020
 								</a>
