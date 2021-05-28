@@ -68,6 +68,7 @@ export default function About() {
 								<a
 									href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
 									target="_blank"
+									rel="noreferrer"
 								>
 									Harvard CS50 2021{' '}
 								</a>
@@ -78,6 +79,7 @@ export default function About() {
 								<a
 									href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com"
 									target="_blank"
+									rel="noreferrer"
 								>
 									{' '}
 									W3School - JavaScript 2020
