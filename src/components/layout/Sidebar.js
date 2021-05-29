@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {
+	FaBars,
+	FaEnvelope,
+	FaFilePdf,
+	FaGithub,
+	FaLinkedinIn,
+	FaMoon,
+	FaSun,
+} from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { FaMoon, FaSun } from 'react-icons/fa';
+
 import { links } from './data';
 
 import './Sidebar.css';
@@ -84,10 +92,20 @@ const Sidebar = () => {
 								</li>
 							);
 						})}
+						<li className="nav-text">
+							<a
+								href="/images/ToniaResumeMay.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaFilePdf />
+								<span>Resume</span>
+							</a>
+						</li>
 					</ul>
 
 					<nav className="bottom-32 left-6 absolute">
-						<ul className="mt-auto  grid grid-cols-3 gap-10">
+						<ul className="mt-auto  grid grid-cols-4 gap-5 ">
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a
 									// onClick={() => setTheme(colorTheme)}
@@ -101,6 +119,15 @@ const Sidebar = () => {
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a href="https://github.com/mstoniajohn?tab=repositories">
 									<FaGithub />
+								</a>
+							</li>
+							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
+								<a
+									href="/images/ToniaResumeMay.pdf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<FaFilePdf />
 								</a>
 							</li>
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">

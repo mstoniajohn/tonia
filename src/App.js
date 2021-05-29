@@ -7,7 +7,7 @@ import Experience from './components/Experience';
 import SingleColor from './components/SingleColor';
 import ProjectList from './components/ProjectList';
 import Sidebar from './components/layout/Sidebar';
-// import Resume from './components/Resume';
+// import { ToniaResumeMay } from '../images/ToniaResumeMay.pdf';
 
 function App() {
 	return (
