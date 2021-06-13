@@ -29,6 +29,12 @@ const Projects = () => {
 							<p className="job-date text-center">{dates}</p>
 							<p className="">{description}</p>
 							<div className="flex justify-center">
+								<h4 className="text-center">Stack</h4>
+								{project.stack.map((s) => (
+									<span id={s}>{s}</span>
+								))}
+							</div>
+							<div className="flex justify-center">
 								<a className="text-center" href={live}>
 									<FaLink className="text-2xl" />
 								</a>{' '}

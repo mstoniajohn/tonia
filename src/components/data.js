@@ -39,14 +39,15 @@ export const data = [
 export const projects = [
 	{
 		id: 'project1',
-		title: 'MERN Shop',
+		title: 'Online Store',
 		image: '/images/shop.jpg',
 		order: 1,
-		live: 'https://smeproshop.herokuapp.com/',
+		live: 'https://antiquelee.com/shop',
 		code: 'https://github.com/mstoniajohn/smeproshop',
 		dates: 'January 2021',
+		stack: ['React', 'Express'],
 		description:
-			'This is a MERN stack application that has the functionality to buy products and checkout with paypal. Mongdb is the data this project using Mongoose as an ORM. Redux is also used on the client side for state management.',
+			'This is a MERN stack application that has the functionality to buy products and checkout with paypal. Mongdb is used as the database in this project using Mongoose as an ORM. Redux is also used on the client side for state management.',
 	},
 	{
 		id: 'project2',
@@ -56,6 +57,8 @@ export const projects = [
 		live: 'https://urlbitz.com/',
 		dates: 'January 2021',
 		code: 'https://github.com/mstoniajohn/url-shortener',
+		stack: ['NodeJS', 'Express'],
+
 		description:
 			'An app that creates short urls and uses Mongo via Mongoose for database storage and CRUD operations. A user can also see the number of clicks each short url has from previous users.',
 	},
@@ -67,6 +70,8 @@ export const projects = [
 		live: 'https://spacechatroom.com/',
 		image: '/images/chat.png',
 		code: 'https://github.com/mstoniajohn/firechat',
+		stack: ['React', 'Firebase'],
+
 		description:
 			'This application was built using Firebase for authentication users and Cloud Firestore for storing users message data. A user can login with google and write messages to the chat and read their messages instantly in the chat.',
 	},
@@ -79,6 +84,8 @@ export const projects = [
 		live: 'https://transcript-lemon.vercel.app/',
 		image: '/images/srt.jpg',
 		code: 'https://github.com/mstoniajohn/transcript',
+		stack: ['React'],
+
 		description:
 			'I created this tool with inspiration from Yash Blog that turns AWS transcribe JSON output into SRT format',
 	},
@@ -92,6 +99,7 @@ export const projects = [
 
 		live: '/colors',
 		code: '#',
+		stack: ['React'],
 		description:
 			'Generate 10 hexidecimal colors from 1 hexidecimal value. This project was built using React and value.js to generate colors.',
 	},

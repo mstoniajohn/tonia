@@ -7,7 +7,8 @@ const ProjectList = () => {
 	// const [jobs, setJobs] = useState(data);
 	const [value, setValue] = useState(0);
 
-	const { description, live, code, title, dates, image } = projects[value];
+	const { description, live, code, title, dates, image, stack } =
+		projects[value];
 	return (
 		<div
 			style={{
@@ -44,6 +45,12 @@ const ProjectList = () => {
 
 						<p className="job-date text-center">{dates}</p>
 						<p className="">{description}</p>
+						<div className="flex justify-center">
+							<h4 className="text-center">Stack</h4>
+							{stack.map((s) => (
+								<span id={s}>{s}</span>
+							))}
+						</div>
 						<div className="flex justify-center">
 							<a className="text-center" href={live}>
 								<FaLink className="text-2xl" />

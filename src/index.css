@@ -52,6 +52,7 @@
 	--text: var(--clr-white);
 	--text-secondary: var(--gray1);
 	--border-color: var(--primary);
+	--desc-text: var(--clr-primary-1);
 }
 .light {
 	--bg: var(--clr-white);
@@ -59,6 +60,7 @@
 	--bg-dropdown: var(--gray0);
 	--text: var(--bg-c);
 	--border-color: var(--primary);
+	--desc-text: var(--clr-primary-1);
 }
 body {
 	background-color: var(--bg);
@@ -299,7 +301,8 @@ input.error {
 }
 .job-info h4 {
 	text-transform: uppercase;
-	color: var(--text);
+	font-weight: bold;
+	color: var(--desc-text) !important;
 	background: var(--clr-grey-9);
 	display: inline-block;
 	padding: 0.375rem 0.75rem;
