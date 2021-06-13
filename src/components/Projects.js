@@ -9,7 +9,7 @@ const Projects = () => {
 	// const { description, live, code, title, dates, image } = projects[value];
 
 	return (
-		<div className="py-16">
+		<div className="py-16" id="project">
 			<div className="title">
 				<h2>Projects</h2>
 				<div className="underlined"></div>

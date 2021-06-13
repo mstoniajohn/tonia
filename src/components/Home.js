@@ -1,6 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import Experience from './Experience';
 // import Projects from './Projects';
@@ -72,7 +73,7 @@ const Home = () => {
 						</li>
 					</ul> */}
 					<p className="animate-bounce text-center mx-auto font-bold">
-						<Link to="/projects">
+						<Link smooth to="#projects">
 							<FaArrowDown className="text-3xl" />
 						</Link>
 					</p>
