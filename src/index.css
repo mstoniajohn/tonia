@@ -171,7 +171,7 @@ input {
 	width: 5rem;
 	height: 0.25rem;
 	margin-bottom: 1.25rem;
-	background: var(--clr-primary-5);
+	background: var(--clr-primary-3);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -323,7 +323,7 @@ input.error {
 	color: var(--text);
 }
 .job-icon {
-	color: var(--clr-primary-5);
+	color: var(--clr-primary-3);
 }
 @media screen and (min-width: 992px) {
 	.jobs-center {
@@ -340,15 +340,15 @@ input.error {
 		margin-bottom: 1rem;
 	}
 	.active-btn {
-		box-shadow: -2px 0 var(--clr-primary-5);
+		box-shadow: -2px 0 var(--clr-primary-3);
 	}
 	.job-btn:hover {
-		box-shadow: -2px 0 var(--clr-primary-5);
+		box-shadow: -2px 0 var(--clr-primary-3);
 	}
 }
 .btn {
 	text-transform: uppercase;
-	background: var(--clr-primary-5);
+	background: var(--clr-primary-3);
 	color: var(--clr-primary-9);
 	padding: 0.3rem 0.7rem;
 	letter-spacing: var(--spacing);

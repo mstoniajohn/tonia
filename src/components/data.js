@@ -39,9 +39,22 @@ export const data = [
 export const projects = [
 	{
 		id: 'project1',
+		title: 'Rockhouse Hotel',
+		image:
+			'https://www.rockhouse.com/wp-content/uploads/2020/08/RH_Slideshow_Desktop_1920x823_B_Pool-1.jpg',
+		order: 1,
+		live: 'https://www.rockhouse.com/',
+		code: 'https://www.rockhouse.com/',
+		dates: 'August 2019',
+		stack: ['Wordpress', 'Javascript'],
+		description:
+			'Rockhouse Hotel is one of the projects I built working as a freelance web developer. The design was presented by the Rockhouse team and I implemented build out the entire site from scratch, including setting up Domain and DNS configuration.',
+	},
+	{
+		id: 'project2',
 		title: 'Online Store',
 		image: '/images/shop.jpg',
-		order: 1,
+		order: 2,
 		live: 'https://antiquelee.com/shop',
 		code: 'https://github.com/mstoniajohn/smeproshop',
 		dates: 'January 2021',
@@ -50,9 +63,9 @@ export const projects = [
 			'This is a MERN stack application that has the functionality to buy products and checkout with paypal. Mongdb is used as the database in this project using Mongoose as an ORM. Redux is also used on the client side for state management.',
 	},
 	{
-		id: 'project2',
+		id: 'project3',
 		title: 'Url Shortener',
-		order: 2,
+		order: 3,
 		image: '/images/mern.jpg',
 		live: 'https://urlbitz.com/',
 		dates: 'January 2021',
@@ -63,9 +76,9 @@ export const projects = [
 			'An app that creates short urls and uses Mongo via Mongoose for database storage and CRUD operations. A user can also see the number of clicks each short url has from previous users.',
 	},
 	{
-		id: 'project3',
+		id: 'project4',
 		title: 'Realtime Chat',
-		order: 3,
+		order: 4,
 		dates: 'Feb 2021',
 		live: 'https://spacechatroom.com/',
 		image: '/images/chat.png',
@@ -77,9 +90,9 @@ export const projects = [
 	},
 
 	{
-		id: 'project4',
+		id: 'project5',
 		title: 'SRT Converter',
-		order: 4,
+		order: 5,
 		dates: 'April 2021',
 		live: 'https://transcript-lemon.vercel.app/',
 		image: '/images/srt.jpg',
@@ -91,9 +104,9 @@ export const projects = [
 	},
 
 	{
-		id: 'project5',
+		id: 'project6',
 		title: 'Colors',
-		order: 5,
+		order: 6,
 		dates: 'March 2021',
 		image: '/images/colors.jpg',
 
