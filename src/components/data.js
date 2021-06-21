@@ -55,8 +55,8 @@ export const projects = [
 		title: 'Online Store',
 		image: '/images/shop.jpg',
 		order: 2,
-		live: 'https://antiquelee.com/shop',
-		code: 'https://github.com/mstoniajohn/smeproshop',
+		live: 'https://newsmeshop.herokuapp.com/',
+		code: 'https://github.com/mstoniajohn/newsmeshop',
 		dates: 'January 2021',
 		stack: ['React', 'Express'],
 		description:
