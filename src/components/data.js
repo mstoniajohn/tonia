@@ -6,7 +6,7 @@ export const data = [
 		dates: 'October 2020 - Present',
 		duties: [
 			'Create programs for my teammates to get work done faster with code automation in Excel using VBA to convert cells with data into HTML output for our websites.',
-			'Writing serveless functions in AWS Lambda convert audio files in one S3 bucket to text using AWS Transcribe then sending the text file output to be stored in another S3 bucket.',
+			'Writing serverless functions in AWS Lambda convert audio files in one S3 bucket to text using AWS Transcribe then sending the text file output to be stored in another S3 bucket.',
 			'Building small apps for uploading and storing files in s3 with python and Django',
 		],
 		company: 'Amazon',
