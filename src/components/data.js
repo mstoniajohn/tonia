@@ -1,9 +1,21 @@
 export const data = [
 	{
 		id: 'job1',
+		title: 'Software Engineer',
+		order: 1,
+		dates: 'July 2021 - Present',
+		duties: [
+			'Creating and fixing features for Onaroll App using Python with Django and Javascript with React.',
+			'Using Git to collaborate with the engineering team.',
+			'Working with the database in Django',
+		],
+		company: 'Onaroll.co',
+	},
+	{
+		id: 'job2',
 		title: 'Web Developer',
-		order: 3,
-		dates: 'October 2020 - Present',
+		order: 2,
+		dates: 'October 2020 - July 2021',
 		duties: [
 			'Create programs for my teammates to get work done faster with code automation in Excel using VBA to convert cells with data into HTML output for our websites.',
 			'Writing serverless functions in AWS Lambda convert audio files in one S3 bucket to text using AWS Transcribe then sending the text file output to be stored in another S3 bucket.',
@@ -12,9 +24,9 @@ export const data = [
 		company: 'Amazon',
 	},
 	{
-		id: 'job2',
+		id: 'job3',
 		title: 'Web Producer',
-		order: 2,
+		order: 3,
 		dates: 'April 2019 - October 2020',
 		duties: [
 			'Build websites using pure html and css',
@@ -24,9 +36,9 @@ export const data = [
 		company: '2U',
 	},
 	{
-		id: 'job3',
+		id: 'job4',
 		title: 'Web Developer / Part-time',
-		order: 3,
+		order: 4,
 		dates: 'Auguts 2019 - Present',
 		duties: [
 			'Setting DNS and hosting for my client and configuring mail servers.',
