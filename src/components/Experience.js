@@ -1,7 +1,6 @@
 import { Box, Button, Grid, Typography } from '@material-ui/core';
 import { ArrowRight } from '@material-ui/icons';
 import React, { useState } from 'react';
-import { FaAngleDoubleRight } from 'react-icons/fa';
 
 import { data } from './data';
 

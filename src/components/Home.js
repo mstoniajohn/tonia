@@ -4,8 +4,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import Experience from './Experience';
-// import Projects from './Projects';
-import ProjectList from './ProjectList';
+
 import useDarkMode from '../hooks/useDarkMode';
 import { FaArrowDown } from 'react-icons/fa';
 import MyTimeline from './features/MyTimeLine';
