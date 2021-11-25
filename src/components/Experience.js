@@ -11,12 +11,13 @@ const Experience = () => {
 	const { company, dates, duties, title } = data[value];
 	return (
 		<Box className="mx-auto max-w-lg">
-			<Grid container spacing={1}>
+			<Grid container spacing={2}>
 				<Grid xs={3} md={12} item spacing={1}>
 					{data.map((job, index) => (
 						<Button
 							key={job.id}
 							variant="text"
+							size="small"
 							color={`${index === value ? 'primary' : 'secondary'}`}
 							onClick={() => setValue(index)}
 							// className={`text-gray-200 ${index === value && 'text-red-300'}`}
@@ -25,7 +26,7 @@ const Experience = () => {
 						</Button>
 					))}
 				</Grid>
-				<Grid item xs={9} md={12} spacing={1}>
+				<Grid item xs={9} md={12} spacing={1} className="p-1">
 					<Typography variant="h6">{title}</Typography>
 					<Typography variant="h6" color="textSecondary">
 						{company}
@@ -38,7 +39,7 @@ const Experience = () => {
 						{dates}
 					</Typography>
 					{duties.map((duty, index) => (
-						<div key={index} className="flex">
+						<div key={index} className="flex p-1">
 							<ArrowRight />
 							<Typography variant="body2">{duty}</Typography>
 						</div>

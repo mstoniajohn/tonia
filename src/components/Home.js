@@ -34,7 +34,7 @@ const Home = () => {
 					</Typography>
 
 					<motion.Typography className="animate-bounce text-center mx-auto font-bold">
-						<HashLink smooth to="#projects">
+						<HashLink smooth to="#content">
 							<FaArrowDown className="text-3xl" />
 						</HashLink>
 					</motion.Typography>
@@ -47,7 +47,7 @@ const Home = () => {
 					</motion.div> */}
 				</div>
 			</div>
-			<Typography align="center" variant="h4" color="secondary">
+			<Typography align="center" variant="h4" color="secondary" id="content">
 				Timeline
 			</Typography>
 			<MyTimeline id="projects" />

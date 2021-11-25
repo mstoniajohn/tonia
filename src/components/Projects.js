@@ -27,17 +27,35 @@ const Projects = () => {
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
-						<Card key={id} sx={{ maxWidth: 350 }}>
-							<CardMedia image={`${image}`} alt="images" className="h-48" />
-							<CardHeader align="center" title={title} color="primary" />
-							<CardContent>
+						<Card
+							key={id}
+							sx={{
+								maxWidth: 350,
+								display: 'flex',
+								flexDirection: 'column',
+								justifyContent: 'space-between',
+							}}
+						>
+							<CardMedia
+								className="flex"
+								image={`${image}`}
+								alt="images"
+								className="h-48"
+							/>
+							<CardHeader
+								className="flex"
+								align="center"
+								title={title}
+								color="primary"
+							/>
+							<CardContent className="flex flex-col">
 								<Typography color="textSecondary" className="text-center">
 									{dates}
 								</Typography>
-								<Typography className="">{description}</Typography>
+								<Typography className="text-center">{description}</Typography>
 							</CardContent>
 
-							<CardActions className="flex space-x-2 items-center justify-between">
+							<CardActions className="flex space-x-2 items-center flex-col justify-between mb-0">
 								<Box className="flex mt-2 space-x-2 items-center">
 									<Typography
 										variant="h6"
@@ -52,7 +70,7 @@ const Projects = () => {
 										</Typography>
 									))}
 								</Box>
-								<Box className="flex justify-end space-x-2">
+								<Box className="flex justify-end space-x-2 items-center">
 									{' '}
 									<Tooltip title="Live Site">
 										<Link href={live}>

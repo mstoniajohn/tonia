@@ -27,6 +27,7 @@ import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import AppsIcon from '@material-ui/icons/Apps';
 import DomainIcon from '@material-ui/icons/Domain';
 import { FaFilePdf } from 'react-icons/fa';
+import Footer from './layout/Footer';
 const pages = [
 	{ name: 'Home', icon: <Home />, url: '/' },
 	{ name: 'Projects', icon: <AppsIcon />, url: '/projects' },
@@ -170,7 +171,7 @@ export default function Header({ children }) {
 							<MenuIcon />
 						</IconButton>
 						<NavLink to="/">
-							<DeveloperModeIcon color="secondary" />
+							<DeveloperModeIcon color="primary" />
 						</NavLink>
 
 						<Box className="flex items-center  ml-auto">
@@ -193,7 +194,7 @@ export default function Header({ children }) {
 								<FaFilePdf />
 							</IconButton>
 
-							<Switch onChange={handleChange} color="default" />
+							<Switch onChange={handleChange} color="secondary" />
 						</Box>
 					</Toolbar>
 				</AppBar>
@@ -205,6 +206,7 @@ export default function Header({ children }) {
 					{list('left')}
 				</Drawer>
 				{children}
+				<Footer />
 			</ThemeProvider>
 		</div>
 	);

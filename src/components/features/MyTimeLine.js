@@ -7,20 +7,14 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import FastfoodIcon from '@material-ui/icons/Fastfood';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import HotelIcon from '@material-ui/icons/Hotel';
-import RepeatIcon from '@material-ui/icons/Repeat';
+
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Filter1Icon from '@material-ui/icons/Filter1';
 import {
 	Filter2Outlined,
-	Filter2TwoTone,
 	Filter3Sharp,
-	Filter3TwoTone,
 	Filter4Outlined,
-	TrendingUp,
 } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
 	paper: {
@@ -52,7 +46,7 @@ export default function MyTimeline() {
 				<TimelineContent>
 					<Paper elevation={3} className={classes.paper}>
 						<Typography variant="subtitle1" component="h1">
-							Software Engineer - Onaroll
+							Software Engineer - Onaroll 
 						</Typography>
 						<Typography variant="caption" color="textSecondary">
 							July 2021 - present
