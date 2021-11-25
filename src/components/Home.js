@@ -29,7 +29,10 @@ const Home = () => {
 					<Typography variant="h6" color="secondary">
 						Welcome to my website...
 					</Typography>
-					<Typography variant="subtitle1" color="textSecondary">
+					<Typography variant="subtitle1" color="primary">
+						I am a Full-Stack Software Engineer
+					</Typography>
+					<Typography variant="caption" color="textSecondary">
 						This website was built with React & TailwindCSS
 					</Typography>
 
