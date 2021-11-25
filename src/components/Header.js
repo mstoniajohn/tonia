@@ -206,7 +206,7 @@ export default function Header({ children }) {
 					{list('left')}
 				</Drawer>
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</ThemeProvider>
 		</div>
 	);
