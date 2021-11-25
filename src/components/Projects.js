@@ -37,10 +37,9 @@ const Projects = () => {
 							}}
 						>
 							<CardMedia
-								className="flex"
 								image={`${image}`}
 								alt="images"
-								className="h-48"
+								className="h-48 flex"
 							/>
 							<CardHeader
 								className="flex"
