@@ -27,7 +27,7 @@ import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import AppsIcon from '@material-ui/icons/Apps';
 import DomainIcon from '@material-ui/icons/Domain';
 import { FaFilePdf } from 'react-icons/fa';
-import Footer from './layout/Footer';
+// import Footer from './layout/Footer';
 const pages = [
 	{ name: 'Home', icon: <Home />, url: '/' },
 	{ name: 'Projects', icon: <AppsIcon />, url: '/projects' },
