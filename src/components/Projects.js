@@ -28,9 +28,8 @@ const Projects = () => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
 						<Card key={id} sx={{ maxWidth: 350 }}>
+							<CardMedia image={`${image}`} alt="images" className="h-48" />
 							<CardHeader align="center" title={title} color="primary" />
-							<CardMedia src={image} alt="images" />
-
 							<CardContent>
 								<Typography color="textSecondary" className="text-center">
 									{dates}
