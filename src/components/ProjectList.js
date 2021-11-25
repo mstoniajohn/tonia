@@ -11,7 +11,6 @@ const ProjectList = () => {
 		projects[value];
 	return (
 		<div
-			id="projects"
 			style={{
 				display: 'flex',
 				alignItems: 'center',

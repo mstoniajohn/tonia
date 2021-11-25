@@ -1,3 +1,5 @@
+import { Box, Button, Grid, Typography } from '@material-ui/core';
+import { ArrowRight } from '@material-ui/icons';
 import React, { useState } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
@@ -9,45 +11,42 @@ const Experience = () => {
 
 	const { company, dates, duties, title } = data[value];
 	return (
-		<div
-			style={{
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'center',
-			}}
-		>
-			<section className="section py-16">
-				<div className="title">
-					<h2>Experience</h2>
-					<div className="underlined"></div>
-				</div>
-				<div className="jobs-center">
-					{/* btn container */}
-					<div className="btn-container">
-						{data.map((job, index) => (
-							<button
-								key={job.id}
-								onClick={() => setValue(index)}
-								className={`job-btn ${index === value && 'active-btn'}`}
-							>
-								{job.company}
-							</button>
-						))}
-					</div>
-					<article className="job-info">
-						<h3>{title}</h3>
-						<h4>{company}</h4>
-						<p className="job-date">{dates}</p>
-						{duties.map((duty, index) => (
-							<div key={index} className="job-desc">
-								<FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-								<p>{duty}</p>
-							</div>
-						))}
-					</article>
-				</div>
-			</section>
-		</div>
+		<Box className="mx-auto max-w-lg">
+			<Grid container spacing={1}>
+				<Grid xs={3} md={12} item spacing={1}>
+					{data.map((job, index) => (
+						<Button
+							key={job.id}
+							variant="text"
+							color={`${index === value ? 'primary' : 'secondary'}`}
+							onClick={() => setValue(index)}
+							// className={`text-gray-200 ${index === value && 'text-red-300'}`}
+						>
+							{job.company}
+						</Button>
+					))}
+				</Grid>
+				<Grid item xs={9} md={12} spacing={1}>
+					<Typography variant="h6">{title}</Typography>
+					<Typography variant="h6" color="textSecondary">
+						{company}
+					</Typography>
+					<Typography
+						variant="subtitle1"
+						color="textSecondary"
+						className="job-date"
+					>
+						{dates}
+					</Typography>
+					{duties.map((duty, index) => (
+						<div key={index} className="flex">
+							<ArrowRight />
+							<Typography variant="body2">{duty}</Typography>
+						</div>
+					))}
+				</Grid>
+			</Grid>
+		</Box>
 	);
 };
 

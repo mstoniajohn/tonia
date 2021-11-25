@@ -10,23 +10,27 @@ import {
 	FaSun,
 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import Switch from '@material-ui/core/Switch';
 
 import { links } from './data';
 
 import './Sidebar.css';
-import { IconContext } from 'react-icons';
-import useDarkMode from '../../hooks/useDarkMode';
+
 // import NavBar from '../Navbar';
-const Sidebar = () => {
+const Sidebar = ({ setTheme, colorTheme }) => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
-	const [colorTheme, setTheme] = useDarkMode();
+	// const [state, setState] = React.useState(true);
+	const handleChange = (event) => {
+		setTheme(colorTheme);
+	};
+	// const [colorTheme, setTheme] = useDarkMode();
 	// const authContext = useContext(AuthContext);
 	// const { logout, user, isAuthenticated } = authContext;
 
 	return (
 		<div className="relative">
-			<IconContext.Provider value={{ color: '#fff' }}>
+			<>
 				<div className="sidebar-navbar ml-0">
 					<Link to="#" className="menu-bars d-flex">
 						<FaBars onClick={showSidebar} />
@@ -35,6 +39,7 @@ const Sidebar = () => {
 					<h4 className="text-light d-flex align-items-center mt-3 ml-3">
 						<Link to="/">Tonia Roganti</Link>
 					</h4>
+					<Switch onChange={handleChange} color="primary" />
 					<div className="ml-auto grid gap-4 grid-cols-2">
 						<div className="grid gap-6 grid-cols-3">
 							<a
@@ -59,10 +64,7 @@ const Sidebar = () => {
 								<FaEnvelope />
 							</a>
 						</div>
-						<span
-							className="p-0 ml-auto pr-4"
-							onClick={() => setTheme(colorTheme)}
-						>
+						<span className="p-0 ml-auto pr-4" onClick={handleChange}>
 							{colorTheme === 'light' ? (
 								<FaMoon className="text-lg" />
 							) : (
@@ -138,7 +140,7 @@ const Sidebar = () => {
 						</ul>
 					</nav>
 				</nav>
-			</IconContext.Provider>
+			</>
 		</div>
 	);
 };

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SingleColorItem from './SingleColorItem';
 import Values from 'values.js';
+import { Button, Grid, TextField, Typography } from '@material-ui/core';
 // import rgbToHex from './utils';
 
 const SingleColor = () => {
@@ -45,24 +46,30 @@ const SingleColor = () => {
 			}}
 		>
 			<section className="section pt-10 text-center mx-auto">
-				<h2 style={{ marginRight: '10px', textAlign: 'center' }}>
+				<Typography
+					variant="h4"
+					style={{ marginRight: '10px', textAlign: 'center' }}
+				>
 					Color Generator
-				</h2>
+				</Typography>
 				<div className="underlined"></div>
 			</section>
 			<section className="container mx-auto">
-				<form onSubmit={handleSubmit}>
-					<input
+				<form
+					className="flex flex-col items-center space-y-2"
+					onSubmit={handleSubmit}
+				>
+					<TextField
 						type="text"
 						value={color}
 						onChange={(e) => setColor(e.target.value)}
-						placeholder="#efb6b2"
-						className={`${error ? 'error' : null}`}
+						placeholder=" #efb6b2"
+						className={` ${error ? 'error' : null}`}
 					/>
 
-					<button className="btn-color" type="submit">
+					<Button variant="outlined" type="submit" className="mt-2">
 						Submit
-					</button>
+					</Button>
 				</form>
 			</section>
 			<section
@@ -80,19 +87,16 @@ const SingleColor = () => {
 			>
 				<span>{errMsg}</span>
 			</section>
-			<section className="colors">
+			<Grid container spacing={2} className="colors">
 				{list.map((color, index) => {
 					const hex = color.hex;
 					return (
-						<SingleColorItem
-							key={index}
-							{...color}
-							index={index}
-							hexColor={hex}
-						/>
+						<Grid item key={index} xs={3} md={2} spacing={1}>
+							<SingleColorItem {...color} index={index} hexColor={hex} />
+						</Grid>
 					);
 				})}
-			</section>
+			</Grid>
 			{/* <section className="colors">
 				{list.map((color, index) => {
 					const hexColor = color.hex;

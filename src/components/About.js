@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link, Typography } from '@material-ui/core';
 
 export default function About() {
 	return (
@@ -12,7 +13,7 @@ export default function About() {
 		>
 			<section className="section py-16">
 				<div className="title">
-					<h2>About Me</h2>
+					<Typography variant="h4">About Me</Typography>
 					<div className="underlined"></div>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -21,7 +22,9 @@ export default function About() {
 						initial={{ x: '-100vw' }}
 						animate={{ x: '0' }}
 					>
-						<h3 className="mb-2 text-2xl">My Coding Journey</h3>
+						<Typography variant="h5" className="mb-2 ">
+							My Coding Journey
+						</Typography>
 						<p>
 							A few years ago, while studying at Baruch College, I took a C++
 							coure to satistfy my Math elective requirements. This is where I
@@ -40,7 +43,9 @@ export default function About() {
 						initial={{ x: '100vw' }}
 						animate={{ x: '0' }}
 					>
-						<h3 className="mb-2 text-2xl">My Passions</h3>
+						<Typography variant="h5" className="mb-2 ">
+							My Passions
+						</Typography>
 						<p>
 							Music is probably one of my biggest passion next to solving
 							problems or doing something cool with programming. I love to hike
@@ -51,7 +56,9 @@ export default function About() {
 						<br />
 					</motion.div>
 					<div>
-						<h3 className="mb-2 text-2xl">College</h3>
+						<Typography variant="h5" className="mb-2 ">
+							College
+						</Typography>
 						<p>B.A. in Mathematics from Baruch College 2016</p>
 
 						<div className="">
@@ -65,25 +72,29 @@ export default function About() {
 						<h3 className="mb-2 text-2xl">Certificates</h3>
 						<div className="list-group">
 							<p className="list-item underline">
-								<a
+								<Link
 									href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
 									target="_blank"
 									rel="noreferrer"
+									className="font-bold"
+									underline="none"
 								>
 									Harvard CS50 2021{' '}
-								</a>
+								</Link>
 							</p>
 
 							<p className="list-item underline">
 								{' '}
-								<a
+								<Link
+									underline="none"
 									href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com"
 									target="_blank"
 									rel="noreferrer"
+									className="font-bold"
 								>
 									{' '}
 									W3School - JavaScript 2020
-								</a>
+								</Link>
 							</p>
 						</div>
 					</div>
@@ -94,7 +105,9 @@ export default function About() {
 						transition={{ delay: 1 }}
 					>
 						<div className=" mb-4">
-							<h3 className="mb-3 text-2xl">Skills</h3>
+							<Typography variant="h5" className="mb-3">
+								Skills
+							</Typography>
 							<div className="mx-auto mb-4 grid grid-cols-2 md:grid-cols-4 gap-2">
 								<div className="mr-4 mb-4">
 									<i

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import rgbToHex from './utils';
 import { motion } from 'framer-motion';
+import { Typography } from '@material-ui/core';
 
 const SingleColorItem = ({ rgb, weight, index, hexColor }) => {
 	const [alert, setAlert] = useState(false);
@@ -18,7 +19,7 @@ const SingleColorItem = ({ rgb, weight, index, hexColor }) => {
 	}, [alert]);
 	return (
 		<article
-			className={`color ${index > 7 && 'color-light'}`}
+			className={`p-2  ${index > 10 ? 'text-white' : 'text-gray-600'}`}
 			style={{ backgroundColor: `rgb(${bgc})` }}
 			onClick={() => {
 				setAlert(true);
@@ -26,17 +27,22 @@ const SingleColorItem = ({ rgb, weight, index, hexColor }) => {
 				// setTimeout(() => setAlert(false), 2000);
 			}}
 		>
-			<p className="percent-value">{weight}%</p>
-			<p className="color-value">{hexValue}</p>
+			<Typography variant="subtitle1" color="default" className="percent-value">
+				{weight}%
+			</Typography>
+			<Typography variant="subtitle2" className="color-value">
+				{hexValue}
+			</Typography>
 			{alert && (
-				<motion.p
+				<motion.Typography
+					variant="caption"
 					className={`alert ${index > 7 && 'alert-light'}`}
 					style={{ textAlign: 'center' }}
 					animate={{ scale: 1.7 }}
 					transition={{ duration: 0.5 }}
 				>
 					Copied
-				</motion.p>
+				</motion.Typography>
 			)}
 		</article>
 	);

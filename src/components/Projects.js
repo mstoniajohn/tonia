@@ -2,47 +2,75 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
 import { projects } from './data';
-import { FaGithub, FaLink } from 'react-icons/fa';
 
+import {
+	Box,
+	Card,
+	CardActions,
+	CardContent,
+	CardHeader,
+	CardMedia,
+	Container,
+	Link,
+	Tooltip,
+	Typography,
+} from '@material-ui/core';
+import LinkIcon from '@material-ui/icons/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
 const Projects = () => {
 	// const [value, setValue] = useState(0);
 	// const { description, live, code, title, dates, image } = projects[value];
 
 	return (
-		<div className="py-16" id="project">
-			<div className="title">
-				<h2>Projects</h2>
-				<div className="underlined"></div>
-			</div>
+		<Container id="project">
 			<motion.div className="p-3 grid grid-cols-1 lg:grid-cols-3 gap-4">
 				{projects.map((project) => {
 					const { title, image, code, live, id, dates, description } = project;
 					return (
-						<article key={id} className="job-info shadow-xl p-3  mx-auto">
-							<h3 className="text-center">{title}</h3>
-							<img
-								className="object-contain h-48 rounded mb-2 mx-auto"
-								src={image}
-								alt="images"
-							/>
+						<Card key={id} sx={{ maxWidth: 350 }}>
+							<CardHeader align="center" title={title} color="primary" />
+							<CardMedia src={image} alt="images" />
 
-							<p className="job-date text-center">{dates}</p>
-							<p className="">{description}</p>
-							<div className="flex justify-center">
-								<h4 className="text-center">Stack</h4>
-								{project.stack.map((s) => (
-									<span id={s}>{s}</span>
-								))}
-							</div>
-							<div className="flex justify-center">
-								<a className="text-center" href={live}>
-									<FaLink className="text-2xl" />
-								</a>{' '}
-								<a className="text-center ml-4" href={code}>
-									<FaGithub className="text-2xl" />
-								</a>
-							</div>
-						</article>
+							<CardContent>
+								<Typography color="textSecondary" className="text-center">
+									{dates}
+								</Typography>
+								<Typography className="">{description}</Typography>
+							</CardContent>
+
+							<CardActions className="flex space-x-2 items-center justify-between">
+								<Box className="flex mt-2 space-x-2 items-center">
+									<Typography
+										variant="h6"
+										color="textSecondary"
+										className="text-center"
+									>
+										Stack:
+									</Typography>
+									{project.stack.map((s) => (
+										<Typography color="textSecondary" variant="body1" id={s}>
+											{s}
+										</Typography>
+									))}
+								</Box>
+								<Box className="flex justify-end space-x-2">
+									{' '}
+									<Tooltip title="Live Site">
+										<Link href={live}>
+											<LinkIcon color="primary" hrefclassName="text-2xl" />
+										</Link>
+									</Tooltip>
+									<Tooltip title="Code on Github">
+										<Link
+											href={code}
+											// sx={{ ml: 3 }}
+										>
+											<GitHubIcon color="primary" className="text-2xl" />
+										</Link>
+									</Tooltip>
+								</Box>
+							</CardActions>
+						</Card>
 					);
 				})}
 			</motion.div>
@@ -221,7 +249,7 @@ const Projects = () => {
 					</motion.div>
 				</motion.div>
 			</section> */}
-		</div>
+		</Container>
 	);
 };
 

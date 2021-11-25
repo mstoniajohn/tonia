@@ -5,7 +5,7 @@ export const data = [
 		order: 1,
 		dates: 'July 2021 - Present',
 		duties: [
-			'Creating and fixing features for Onaroll App using Python with Django and Javascript with React.',
+			'Creating and fixing features for Onaroll App using Python with Django for our backend and Typescript with React in the frontend.',
 			'Using Git to collaborate with the engineering team.',
 			'Working with the database in Django',
 		],
@@ -39,7 +39,7 @@ export const data = [
 		id: 'job4',
 		title: 'Web Developer / Part-time',
 		order: 4,
-		dates: 'Auguts 2019 - Present',
+		dates: 'August 2019 - Present',
 		duties: [
 			'Setting DNS and hosting for my client and configuring mail servers.',
 			'Creating website pages within Wordpress',
