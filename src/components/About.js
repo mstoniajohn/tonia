@@ -32,21 +32,21 @@ export default function About() {
 				</div>
 				<div className="mb-7">
 					<h3 className="mb-2 text-2xl ">Certificates</h3>
-					<div className="list-group">
+					<div className="list-group space-y-2">
 						<p className="list-item underline">
-							<p>
+							{' '}
+							<Link
+								underline="none"
+								href="https://www.hackerrank.com/certificates/8ba50eb642a1"
+								target="_blank"
+								rel="noreferrer"
+								className="font-bold"
+							>
 								{' '}
-								<Link
-									underline="none"
-									href="https://www.hackerrank.com/certificates/8ba50eb642a1"
-									target="_blank"
-									rel="noreferrer"
-									className="font-bold"
-								>
-									{' '}
-									HackerRank Pyhton Certification
-								</Link>
-							</p>
+								HackerRank Pyhton Certification
+							</Link>
+						</p>
+						<p className="list-item underline">
 							<Link
 								href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
 								target="_blank"
