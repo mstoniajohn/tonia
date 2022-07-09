@@ -12,9 +12,66 @@ export default function About() {
 			}}
 		>
 			<section className="section py-16">
-				<div className="title">
+				<div className="title mb-7">
 					<Typography variant="h4">About Me</Typography>
 					<div className="underlined"></div>
+				</div>
+
+				<div>
+					<Typography variant="h5" className="mb-2 ">
+						College
+					</Typography>
+					<p>B.A. in Mathematics from Baruch College 2016</p>
+
+					<div className="">
+						<p className="list-item">Combinatorics</p>
+						<p className="list-item">Linear Algebra</p>
+						<p className="list-item">Advance Calculus I</p>
+						<br />
+					</div>
+				</div>
+				<div className="mb-7">
+					<h3 className="mb-2 text-2xl ">Certificates</h3>
+					<div className="list-group">
+						<p className="list-item underline">
+							<p>
+								{' '}
+								<Link
+									underline="none"
+									href="https://www.hackerrank.com/certificates/8ba50eb642a1"
+									target="_blank"
+									rel="noreferrer"
+									className="font-bold"
+								>
+									{' '}
+									HackerRank Pyhton Certification
+								</Link>
+							</p>
+							<Link
+								href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
+								target="_blank"
+								rel="noreferrer"
+								className="font-bold"
+								underline="none"
+							>
+								Harvard CS50 2021{' '}
+							</Link>
+						</p>
+
+						<p className="list-item underline">
+							{' '}
+							<Link
+								underline="none"
+								href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com"
+								target="_blank"
+								rel="noreferrer"
+								className="font-bold"
+							>
+								{' '}
+								W3School - JavaScript 2020
+							</Link>
+						</p>
+					</div>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 					<motion.div
@@ -55,49 +112,6 @@ export default function About() {
 						<br />
 						<br />
 					</motion.div>
-					<div>
-						<Typography variant="h5" className="mb-2 ">
-							College
-						</Typography>
-						<p>B.A. in Mathematics from Baruch College 2016</p>
-
-						<div className="">
-							<p className="list-item">Combinatorics</p>
-							<p className="list-item">Linear Algebra</p>
-							<p className="list-item">Advance Calculus I</p>
-							<br />
-						</div>
-					</div>
-					<div>
-						<h3 className="mb-2 text-2xl">Certificates</h3>
-						<div className="list-group">
-							<p className="list-item underline">
-								<Link
-									href="https://certificates.cs50.io/6228bf06-33d8-4cf6-9db7-a66eb4761740.png?size=letter"
-									target="_blank"
-									rel="noreferrer"
-									className="font-bold"
-									underline="none"
-								>
-									Harvard CS50 2021{' '}
-								</Link>
-							</p>
-
-							<p className="list-item underline">
-								{' '}
-								<Link
-									underline="none"
-									href="https://certification.w3schools.com/w3certified.asp?email=toniaroganti@gmail.com"
-									target="_blank"
-									rel="noreferrer"
-									className="font-bold"
-								>
-									{' '}
-									W3School - JavaScript 2020
-								</Link>
-							</p>
-						</div>
-					</div>
 
 					<motion.div
 						initial={{ opacity: 0 }}
