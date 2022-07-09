@@ -55,7 +55,7 @@ const Projects = () => {
 							</CardContent>
 
 							<CardActions className="flex space-x-2 items-center flex-col justify-between mb-0">
-								<Box className="flex mt-2 space-x-2 items-center">
+								<Box className="flex mt-2 space-x-2 items-center  p-2">
 									<Typography
 										variant="h6"
 										color="textSecondary"
