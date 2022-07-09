@@ -96,7 +96,7 @@ const Sidebar = ({ setTheme, colorTheme }) => {
 						})}
 						<li className="nav-text">
 							<a
-								href="/images/ToniaResumeMay.pdf"
+								href="/images/ToniaResume2022.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
