@@ -85,7 +85,7 @@ export const projects = [
 		stack: ['NextJS', 'React', 'TailwindCSS', 'Sanity'],
 
 		description:
-			'A simple NectJS website that provides crud functionality for my client manage all of their events seamlessly using the Sanity CMS as a backend for data storage. Users can RSVP for any event via email which my client receives instantaneously via EmailJS.',
+			'A simple NextJS website that provides crud functionality for my client manage all of their events seamlessly using the Sanity CMS as a backend for data storage. Users can RSVP for any event via email which my client receives instantaneously via EmailJS.',
 	},
 	{
 		id: 'project4',
