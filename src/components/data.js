@@ -76,16 +76,16 @@ export const projects = [
 	},
 	{
 		id: 'project3',
-		title: 'Url Shortener',
+		title: 'The Fresh Babe Events',
 		order: 3,
-		image: '/images/mern.jpg',
-		live: 'https://urlbitz.com/',
-		dates: 'January 2021',
-		code: 'https://github.com/mstoniajohn/url-shortener',
-		stack: ['NodeJS', 'Express'],
+		image: '/images/p3.jpeg',
+		live: 'https://www.thefreshbabe.com/',
+		dates: 'July 2022',
+		code: 'https://github.com/mstoniajohn/freshbabe',
+		stack: ['NextJS', 'React', 'TailwindCSS', 'Sanity'],
 
 		description:
-			'An app that creates short urls and uses Mongo via Mongoose for database storage and CRUD operations. A user can also see the number of clicks each short url has from previous users.',
+			'A simple NectJS website that provides crud functionality for my client manage all of their events seamlessly using the Sanity CMS as a backend for data storage. Users can RSVP for any event via email which my client receives instantaneously via EmailJS.',
 	},
 	{
 		id: 'project4',
