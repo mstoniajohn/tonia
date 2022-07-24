@@ -46,7 +46,7 @@ export default function MyTimeline() {
 				<TimelineContent>
 					<Paper elevation={3} className={classes.paper}>
 						<Typography variant="subtitle1" component="h1">
-							Software Engineer - Onaroll 
+							 Onaroll  - Software Engineer 
 						</Typography>
 						<Typography variant="caption" color="textSecondary">
 							July 2021 - present
