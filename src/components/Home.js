@@ -55,6 +55,9 @@ const Home = () => {
 				Timeline
 			</Typography>
 			<MyTimeline id="projects" />
+			<br />
+			<Experience />
+
 
 			<br />
 			<Typography id="projects" align="center" variant="h4" color="secondary">
@@ -69,8 +72,7 @@ const Home = () => {
 			<Typography align="center" variant="h4" color="secondary">
 				Experience
 			</Typography>
-			<Experience />
-			<CodeAlgo />
+			{/* <CodeAlgo /> */}
 		</div>
 	);
 };
