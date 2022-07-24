@@ -10,6 +10,7 @@ import { FaArrowDown } from 'react-icons/fa';
 import MyTimeline from './features/MyTimeLine';
 import Projects from './Projects';
 import { Typography } from '@material-ui/core';
+import CodeAlgo from './features/CodeAlgo';
 
 const Home = () => {
 	useDarkMode();
@@ -69,6 +70,7 @@ const Home = () => {
 				Experience
 			</Typography>
 			<Experience />
+			<CodeAlgo />
 		</div>
 	);
 };

@@ -17,6 +17,7 @@ import {
 } from '@material-ui/core';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import CodeAlgo from './features/CodeAlgo';
 const Projects = () => {
 	// const [value, setValue] = useState(0);
 	// const { description, live, code, title, dates, image } = projects[value];
@@ -265,6 +266,7 @@ const Projects = () => {
 					</motion.div>
 				</motion.div>
 			</section> */}
+			<CodeAlgo />
 		</Container>
 	);
 };

@@ -10,7 +10,7 @@ const Experience = () => {
 
 	const { company, dates, duties, title } = data[value];
 	return (
-		<Box className="mx-auto max-w-lg">
+		<Box className="mx-auto max-w-xl pt-4">
 			<Grid container spacing={2}>
 				<Grid xs={3} md={12} item spacing={1}>
 					{data.map((job, index) => (
