@@ -1,12 +1,13 @@
 import { Typography } from '@material-ui/core';
 import React, { useState } from 'react'
-import { CopyBlock, CodeBlock, dracula, github, atomOneDark } from "react-code-blocks";
+import { CopyBlock, atomOneDark } from "react-code-blocks";
 
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -99,23 +100,47 @@ const CodeAlgo = () => {
         `
     }
     )
+    const quickSort = `
+        def swap(a, b, arr):
+            if a != b:
+                tmp = arr[a]
+                arr[a] = arr[b]
+                arr[b] = tmp
+
+        def pivot(nums, pivot_index, end):
+            swap_index = pivot_index
+            for i in range(pivot_index + 1, end + 1):
+                if nums[i] < nums[pivot_index]:
+                    swap_index += 1
+                    swap(swap_index, i, nums)
+            swap(pivot_index, swap_index, nums)
+            return swap_index
+
+        def quickSort(nums, left, right):
+            if left < right:
+                index = pivot(nums, left, right)
+                quickSort(nums, left, index - 1)
+                quickSort(nums, index + 1, right)
+
+            return nums
+    `;
     return (
-        <div className='max-w-2xl mx-auto py-10'>
+        <div className='mx-auto py-10 max-w-3xl'>
             <Typography variant='h4' color="secondary">Data Structures and Algorithms in Python</Typography>
                          <Typography variant='h5' className='py-2 text-center'>Sorting Algorithms</Typography>
 
            
             <div className={classes.root}>
-      <Accordion>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+                        id="panel1a-header"
+                       
         >
-                        {/* <Typography className={classes.heading}>Accordion 1</Typography> */}
                          <Typography className={classes.heading}>Bubble Sort</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </AccordionSummary >
+        <AccordionDetails  className='w-full flex justify-center'>
            <CopyBlock
                             text={code.bubbleSort}
                             className="w-full"
@@ -137,7 +162,7 @@ const CodeAlgo = () => {
         >
           <Typography className={classes.heading}>Selection Sort</Typography>
         </AccordionSummary>
-        <AccordionDetails className='w-full mx-auto text-center'>
+        <AccordionDetails className='w-full flex justify-center'>
                         <CopyBlock
                             className="w-full mx-auto"
       text={code.selectionSort}
@@ -159,7 +184,7 @@ const CodeAlgo = () => {
         >
           <Typography className={classes.heading}>Insertion Sort</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails className='w-full flex justify-center'>
                         <CopyBlock
                             className="w-full"
       text={code.insertionSort}
@@ -181,7 +206,7 @@ const CodeAlgo = () => {
         >
           <Typography className={classes.heading}>Merge Sort</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails className='w-full flex justify-center'>
                         <CopyBlock
                             className="w-full mx-auto"
       text={code.mergeSort}
@@ -195,6 +220,30 @@ const CodeAlgo = () => {
             />
                     </AccordionDetails>
                 </Accordion>
+                     <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography className={classes.heading}>Quick Sort</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className='w-full flex justify-center'>
+                      <CopyBlock
+                            className="w-full mx-auto"
+      text={quickSort}
+      language="python"
+        showLineNumbers={true}
+      startingLineNumber={1}
+                            theme={atomOneDark}
+                            codeBlock
+                            
+                wrapLines
+            />
+    
+                    </AccordionDetails>
+                </Accordion>
+               
                 
     </div>
 
