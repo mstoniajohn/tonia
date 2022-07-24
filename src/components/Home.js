@@ -56,6 +56,9 @@ const Home = () => {
 			</Typography>
 			<MyTimeline id="projects" />
 			<br />
+			<Typography align="center" variant="h4" color="secondary">
+				Experience
+			</Typography>
 			<Experience />
 
 
@@ -69,9 +72,7 @@ const Home = () => {
 				style={{ width: '80vw', margin: '30px auto', height: '1px' }}
 				className="underline"
 			></div>
-			<Typography align="center" variant="h4" color="secondary">
-				Experience
-			</Typography>
+			
 			{/* <CodeAlgo /> */}
 		</div>
 	);
