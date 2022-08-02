@@ -125,7 +125,7 @@ const Sidebar = ({ setTheme, colorTheme }) => {
 							</li>
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
 								<a
-									href="/images/ToniaResumeMay.pdf"
+									href="/images/Tonia.pdf"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
