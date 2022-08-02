@@ -95,7 +95,11 @@ const Sidebar = ({ setTheme, colorTheme }) => {
 							);
 						})}
 						<li className="nav-text">
-							<a href="/Tonias.pdf" target="_blank" rel="noopener noreferrer">
+							<a
+								href="/images/Tonias.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FaFilePdf />
 								<span>Resume</span>
 							</a>
@@ -120,7 +124,11 @@ const Sidebar = ({ setTheme, colorTheme }) => {
 								</a>
 							</li>
 							<li className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none">
-								<a href="/Tonias.pdf" target="_blank" rel="noopener noreferrer">
+								<a
+									href="/images/Tonias.pdf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<FaFilePdf />
 								</a>
 							</li>

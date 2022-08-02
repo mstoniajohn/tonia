@@ -190,7 +190,7 @@ export default function Header({ children }) {
 							>
 								<LinkedIn />
 							</IconButton>
-							<IconButton href="/Tonias.pdf">
+							<IconButton href="/images/Tonias.pdf">
 								<FaFilePdf />
 							</IconButton>
 
